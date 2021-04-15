@@ -9,8 +9,8 @@ import GlobalStyles from './components/GlobalStyles';
 function App() {
   return (
     <div className="App">
-      <Nav />
       <GlobalStyles />
+      <Nav />
       <Home />
     </div>
   );
