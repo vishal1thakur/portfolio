@@ -2,9 +2,7 @@ import React from 'react';
 // Images
 import logo from '../img/logo.svg';
 import about from '../img/about.svg';
-import about_hover from '../img/about_hover.svg';
 import contact from '../img/contact.svg';
-import contact_hover from '../img/contact_hover.svg';
 import all_work from '../img/all_work.svg';
 import react from '../img/react.svg';
 import java_script from '../img/java_script.svg';
@@ -25,7 +23,6 @@ const Nav = () => {
       <Icon>
         <div className="item">
           <img className="off" src={about} alt="" />
-          <img className="on" src={about_hover} alt="" />
           <p>ABOUT</p>
         </div>
       </Icon>
@@ -33,7 +30,6 @@ const Nav = () => {
       <Icon>
         <div className="item">
           <img className="off" src={contact} alt="" />
-          <img className="on" src={contact_hover} alt="" />
           <p>CONTACT</p>
         </div>
       </Icon>

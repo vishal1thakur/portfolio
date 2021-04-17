@@ -41,32 +41,33 @@ const HomeContent = () => {
         </p>
       </Banner>
       <Social>
-        <div className="box popup">
-          <h4 className="popup-name">GITHUB</h4>
-        </div>
+        <div className="box"></div>
         <div className="box"></div>
         <div className="box"></div>
 
-        <div className="box github-box">
-          <div className="github">
-            <div className="git">
-              <img className="git-image" src={github} alt="" />
+        <div className="box">
+          <div className="card">
+            <div className="social github">
+              <img className="social-image" src={github} alt="" />
+              <div className="github-name">GITHUB</div>
             </div>
           </div>
         </div>
 
-        <div className="box github-box ">
-          <div className="github ">
-            <div className="git linkedin">
-              <img className="git-image" src={linkedin} alt="" />
+        <div className="box">
+          <div className="card ">
+            <div className="social linkedin">
+              <img className="social-image" src={linkedin} alt="" />
+              <div className="linkedin-name">LINKEDIN</div>
             </div>
           </div>
         </div>
 
-        <div className="box github-box ">
-          <div className="github">
-            <div className="git resume">
-              <img className="git-image" src={resume} alt="" />
+        <div className="box">
+          <div className="card">
+            <div className="social resume">
+              <img className="social-image" src={resume} alt="" />
+              <div className="resume-name">RESUME</div>
             </div>
           </div>
         </div>
@@ -132,7 +133,7 @@ const Button = styled(motion.div)`
     display: block;
     text-align: center;
     text-decoration: none;
-    border: 2px solid rgba(255, 205, 46, 0.1);
+    border: 1.5px solid rgba(255, 205, 46, 0.25);
     margin: auto;
     padding: 30px 10px;
     width: 100%;
@@ -150,7 +151,7 @@ const Button = styled(motion.div)`
       font-size: 16px;
       color: #ffcd2e;
       letter-spacing: 0.1em;
-      opacity: 0.7;
+      opacity: 0.5;
       transition: opacity 0.5s ease;
     }
   }
@@ -205,7 +206,7 @@ const Skill = styled(motion.div)`
 const Social = styled(motion.div)`
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 1.6fr 0.4fr;
+  grid-template-rows: 1.5fr 0.5fr;
   gap: 0px 0px;
   grid-template-areas:
     '. . .'
@@ -213,74 +214,113 @@ const Social = styled(motion.div)`
   margin-left: -4rem;
   height: 100vh;
   padding-right: 1000px;
-  p .box {
-    /* background: white;
-    border: 1px solid black;
-    color: black; */
-  }
 
-  .popup {
-    position: relative;
-
-    .popup-name {
-      position: absolute;
-      bottom: -10%;
-      margin-left: 30px;
-      margin-bottom: 8px;
-      padding: 1px 5px;
-      font-size: 14px;
-      font-weight: 400;
-      background: rgba(255, 46, 46, 1);
-      border-radius: 3px;
-      display: none;
-    }
-  }
-
-  .github {
+  .card {
     width: 100%;
     height: 100%;
     display: flex;
 
-    .git {
+    .social {
       width: 100%;
       height: 100%;
       border-radius: 100px 100px 0px 0px;
-      border: 2px dotted rgba(255, 46, 46, 0.3);
       border-bottom: none;
       margin-right: 35px;
-
       margin-left: 10px;
-
       cursor: pointer;
-      .git:hover {
-        background: rgba(255, 46, 46, 1);
-        .popup-name {
-          position: absolute;
-          bottom: 0;
-          margin-left: 30px;
-          margin-bottom: 8px;
-          padding: 1px 5px;
-          font-size: 14px;
-          font-weight: 400;
-          background: rgba(255, 46, 46, 1);
-          border-radius: 3px;
-          display: block;
-        }
+    }
+    .social-image {
+      position: relative;
+      top: -30%;
+      padding: 32px;
+      opacity: 0.3;
+      transition: opacity 0.5s ease-in-out;
+    }
+  }
+
+  .github {
+    border: 2px dotted rgba(255, 46, 46, 0.4);
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: rgba(255, 46, 46, 0);
+    transition: background-color 0.5s ease-in-out;
+    .github-name {
+      position: absolute;
+      bottom: 1rem;
+      font-size: 12px;
+      font-weight: 500;
+      letter-spacing: 0.1em;
+      opacity: 0;
+      color: #f3f3f3;
+      transition: opacity 0.5s ease-in-out;
+    }
+    :hover {
+      background-color: rgba(255, 46, 46, 0.7);
+      .github-name {
+        opacity: 1;
       }
-      .git-image {
-        display: flex;
-        align-items: center;
-        text-align: center;
-        justify-content: center;
-        padding: 36px;
-        opacity: 0.7;
+      .social-image {
+        opacity: 1;
       }
     }
-    .linkedin {
-      border: 2px dotted rgba(46, 117, 255, 0.3);
+  }
+
+  .linkedin {
+    border: 2px dotted rgba(46, 117, 255, 0.4);
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    transition: background-color 0.5s ease-in-out;
+    .linkedin-name {
+      position: absolute;
+      bottom: 1rem;
+      font-size: 12px;
+      font-weight: 500;
+      letter-spacing: 0.1em;
+      opacity: 0;
+      transition: opacity 0.5s ease-in-out;
     }
-    .resume {
-      border: 2px dotted rgba(255, 205, 46, 0.3);
+    :hover {
+      background: rgba(46, 117, 255, 0.7);
+      .linkedin-name {
+        opacity: 1;
+      }
+      .social-image {
+        opacity: 1;
+      }
+    }
+  }
+
+  .resume {
+    border: 2px dotted rgba(255, 205, 46, 0.4);
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    transition: background-color 0.5s ease-in-out;
+    .resume-name {
+      position: absolute;
+      bottom: 1rem;
+      font-size: 12px;
+      font-weight: 500;
+      letter-spacing: 0.1em;
+      opacity: 0;
+      transition: opacity 0.5s ease-in-out;
+    }
+    :hover {
+      background: rgba(255, 205, 46, 0.8);
+      .resume-name {
+        opacity: 1;
+      }
+      .social-image {
+        opacity: 1;
+      }
     }
   }
 `;
