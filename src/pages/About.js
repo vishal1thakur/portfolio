@@ -315,7 +315,7 @@ const SkillBar = styled(motion.div)`
   display: grid;
   grid-template-columns: repeat(1fr);
   grid-template-rows: repeat(4, 1fr);
-  grid-gap: 25px;
+  grid-gap: 28px;
   .design {
     margin-right: 20px;
   }

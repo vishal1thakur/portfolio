@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import {} from 'react-router-dom';
 //Pages
 import About from './pages/About';
@@ -11,8 +11,13 @@ import Nav from './components/Nav';
 import GlobalStyles from './components/GlobalStyles';
 // Dependencies
 import {Switch, Route} from 'react-router-dom';
+import data from './data';
 
 function App() {
+  // State
+  const [projects, setProjects] = useState(data());
+  const [currentProject, setCurrentProject] = useState(projects[0]);
+  console.log(projects[0]);
   return (
     <div className="App">
       <GlobalStyles />
@@ -28,7 +33,7 @@ function App() {
           <Contact />
         </Route>
         <Route path="/work">
-          <AllWork />
+          <AllWork projects={projects} />
         </Route>
       </Switch>
     </div>

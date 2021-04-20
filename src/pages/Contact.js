@@ -18,9 +18,9 @@ const Contact = () => {
         <div className="line"></div>
       </Header>
       <Content>
-        <div className="text">
+        {/* <div className="text">
           <h3>You can reach me through the following channels. Lets talk!</h3>
-        </div>
+        </div> */}
         <div className="contact-container">
           <div className="email contact">
             <img src={email} alt="" />
@@ -96,13 +96,12 @@ const Content = styled(motion.div)`
   height: 80vh;
   display: flex;
   flex-direction: column;
-  justify-content: top;
+  justify-content: center;
   text-align: center;
   align-items: center;
   position: relative;
 
   .text {
-    margin-top: 2rem;
     h3 {
       font-size: 16px;
       padding-bottom: 20px;
