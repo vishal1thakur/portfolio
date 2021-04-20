@@ -180,10 +180,13 @@ const About = () => {
           </div>
         </AboutMe>
       </StyledAbout>
-      <Header>
-        <div className="line"></div>
-        <h2>ABOUT</h2>
-      </Header>
+      <Footer className="footer">
+        <hr></hr>
+        <p className="copyright">
+          &#169; 2021 Vishal Thakur : website crafted in React, deployed on
+          Netlify
+        </p>
+      </Footer>
     </AllAbout>
   );
 };
@@ -466,5 +469,25 @@ const AboutMe = styled(motion.div)`
         opacity: 0.5;
       }
     }
+  }
+`;
+
+const Footer = styled(motion.div)`
+  margin-left: 100px;
+  margin-bottom: 2rem;
+  hr {
+    border-top: 1px dashed #4a4a4a;
+    border-left: 0px;
+    border-bottom: 0px;
+    border-right: 0px;
+    opacity: 0.4;
+  }
+
+  .copyright {
+    padding-top: 0.5rem;
+    text-align: center;
+    font-size: 12px;
+    opacity: 0.6;
+    color: #636566;
   }
 `;
