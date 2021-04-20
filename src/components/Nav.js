@@ -1,3 +1,5 @@
+// ------------ 1) Imports ------------------
+
 import React from 'react';
 // Images
 import logo from '../img/logo.svg';
@@ -11,62 +13,79 @@ import ux from '../img/ux.svg';
 import styled from 'styled-components';
 // Animation
 import {motion} from 'framer-motion';
+import {Link} from 'react-router-dom';
+
+// ------------ 2) JSX ------------------
 
 const Nav = () => {
   return (
     <StyledNav>
       <Logo>
-        <img src={logo} alt="" />
+        <StyledLink to="/">
+          <img src={logo} alt="" />
+        </StyledLink>
       </Logo>
       {/* Menu Fields */}
       {/* About */}
       <Icon>
         <div className="item">
-          <img className="off" src={about} alt="" />
-          <p>ABOUT</p>
+          <StyledLink to="/about">
+            <img src={about} alt="" />
+            <p>ABOUT</p>
+          </StyledLink>
         </div>
       </Icon>
       {/* Contact */}
       <Icon>
         <div className="item">
-          <img className="off" src={contact} alt="" />
-          <p>CONTACT</p>
+          <StyledLink to="/contact">
+            <img src={contact} alt="" />
+            <p>CONTACT</p>
+          </StyledLink>
         </div>
       </Icon>
       {/* All Work */}
       <Icon>
         <div className="item">
-          <img src={all_work} alt="" />
-          <p>All WORK</p>
+          <StyledLink to="/work">
+            <img src={all_work} alt="" />
+            <p>All WORK</p>
+          </StyledLink>
         </div>
       </Icon>
       {/* React */}
       <IconReact>
         <div className="item">
-          <img src={react} className="react" alt="" />
-          <p>REACT</p>
+          <StyledLink to="/">
+            <img src={react} className="react" alt="" />
+            <p>REACT</p>
+          </StyledLink>
         </div>
       </IconReact>
       {/* JavaScript */}
       <Icon>
         <div className="item">
-          <img src={java_script} alt="" />
-          <p>JAVASCRIPT</p>
+          <StyledLink to="/">
+            <img src={java_script} alt="" />
+            <p>JAVASCRIPT</p>
+          </StyledLink>
         </div>
       </Icon>
       {/* UX/UI */}
       <Icon>
         <div className="item">
-          <img src={ux} alt="" />
-          <p>UX/UI</p>
+          <StyledLink to="/">
+            <img src={ux} alt="" />
+            <p>UX/UI</p>
+          </StyledLink>
         </div>
       </Icon>
     </StyledNav>
   );
 };
 
-// Styles
-// Nav
+// ------------ 3) Styles ------------------
+
 const StyledNav = styled(motion.div)`
   width: 100px;
   height: 100vh;
@@ -104,11 +123,6 @@ const Icon = styled(motion.div)`
   }
 
   .item {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
     cursor: pointer;
     opacity: 0.3;
     transition: opacity 0.3s;
@@ -148,9 +162,22 @@ const Icon = styled(motion.div)`
   }
 `;
 
+// Exclusion for react icon
 const IconReact = styled(Icon)`
   p {
     padding-top: 0px;
+  }
+`;
+
+const StyledLink = styled(Link)`
+  text-decoration: none;
+
+  &:focus,
+  &:hover,
+  &:visited,
+  &:link,
+  &:active {
+    text-decoration: none;
   }
 `;
 
