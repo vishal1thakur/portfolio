@@ -9,6 +9,7 @@ import resume from '../img/resume.svg';
 import styled from 'styled-components';
 // Animation
 import {motion} from 'framer-motion';
+import {Link} from 'react-router-dom';
 
 // ------------ 2) JSX ------------------
 
@@ -40,9 +41,9 @@ const Home = () => {
 
         {/* Main CTA */}
         <Button>
-          <button className="button">
+          <Link to="/work" className="button">
             <h4>View My Work</h4>
-          </button>
+          </Link>
         </Button>
 
         {/* Footer */}
@@ -180,11 +181,11 @@ const Skill = styled(motion.div)`
 const Button = styled(motion.div)`
   padding-top: 2rem;
 
-  button {
+  .button {
     display: block;
     text-align: center;
     text-decoration: none;
-    border: 1.5px solid rgba(255, 205, 46, 0.25);
+    border: 1px solid rgba(255, 205, 46, 0.4);
     margin: auto;
     padding: 30px 10px;
     width: 100%;
@@ -206,13 +207,13 @@ const Button = styled(motion.div)`
       transition: opacity 0.5s ease;
     }
   }
-  button:hover {
+  .button:hover {
     box-shadow: 0px 0px 15px 5px rgba(255, 205, 46, 0.08);
     h4 {
       opacity: 1;
     }
   }
-  button:active {
+  .button:active {
     box-shadow: 0px 0px 10px 6px rgba(255, 205, 46, 0.1);
     h4 {
       opacity: 1;
@@ -262,7 +263,7 @@ const SocialCard = styled(motion.div)`
 
   // Github only
   .github {
-    border: 2px dotted rgba(255, 46, 46, 0.4);
+    border: 2px dotted rgba(255, 46, 46, 0.6);
     border-bottom: none;
     position: relative;
     display: flex;
@@ -294,7 +295,7 @@ const SocialCard = styled(motion.div)`
 
   // Lonkedin only
   .linkedin {
-    border: 2px dotted rgba(46, 117, 255, 0.4);
+    border: 2px dotted rgba(46, 117, 255, 0.6);
     border-bottom: none;
     position: relative;
     display: flex;
@@ -324,7 +325,7 @@ const SocialCard = styled(motion.div)`
 
   //Resume only
   .resume {
-    border: 2px dotted rgba(255, 205, 46, 0.4);
+    border: 2px dotted rgba(255, 205, 46, 0.6);
     position: relative;
     display: flex;
     align-items: center;

@@ -1,37 +1,47 @@
 import React from 'react';
 // Style
 import styled from 'styled-components';
-// Animation
-import {motion} from 'framer-motion';
+import {Link} from 'react-router-dom';
 
-const Project = ({name, type, cover}) => {
+const Project = ({project}) => {
   return (
-    <StyledProject>
+    <StyledLink to={project.link}>
       <div className="grey-bg"></div>
       <div className="content-bg">
         <div className="image"></div>
         <div className="content">
           <div className="project-name">
-            <h4>OBS Visualizer</h4>
+            <h4>{project.name}</h4>
           </div>
           <div className="type">
-            <div className="type-box">
-              <h5>UX / UI</h5>
+            <div
+              className="type-box"
+              style={
+                project.type === 'REACT'
+                  ? {backgroundColor: '#2E75FF'}
+                  : project.type === 'UX / UI'
+                  ? {backgroundColor: '#FF2E2E'}
+                  : project.type === 'JAVASCRIPT'
+                  ? {backgroundColor: 'rgba(255, 205, 46, 0.8)'}
+                  : 'black'
+              }
+            >
+              <h5>{project.type}</h5>
             </div>
           </div>
         </div>
       </div>
-    </StyledProject>
+    </StyledLink>
   );
 };
 
-const StyledProject = styled(motion.div)`
+const StyledLink = styled(Link)`
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 
-  height: 100%;
+  height: 90%;
   width: 100%;
 
   position: relative;
@@ -77,7 +87,7 @@ const StyledProject = styled(motion.div)`
       text-align: center;
       .project-name {
         height: 100%;
-        width: 70%;
+        width: 65%;
         display: flex;
         justify-content: left;
         align-items: center;
@@ -92,12 +102,12 @@ const StyledProject = styled(motion.div)`
       }
       .type {
         height: 100%;
-        width: 30%;
+        width: 35%;
         display: flex;
         justify-content: center;
         align-items: center;
         text-align: center;
-        padding: 20px 0px 0px 0px;
+        padding: 15px 0px 0px 0px;
         .type-box {
           background: #ff2e2e;
           width: 100%;
@@ -109,7 +119,7 @@ const StyledProject = styled(motion.div)`
           border-radius: 5px;
           h5 {
             color: white;
-            font-size: 12px;
+            font-size: 11px;
             font-weight: 600;
           }
         }

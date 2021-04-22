@@ -1,28 +1,25 @@
-import React from 'react';
+import React, {useState} from 'react';
 // Components
 import Project from '../components/Project';
 // Style
 import styled from 'styled-components';
 // Animation
 import {motion} from 'framer-motion';
+import data from '../data';
 
-const AllWork = ({projects}) => {
+const AllWork = () => {
+  const [projects] = useState(data());
+
   return (
     <Work>
       <Header>
         <h2>ALL WORK</h2>
         <div className="line"></div>
       </Header>
-      <Projects projects={projects}>
-        <Project />
-        <Project />
-        <Project />
-        <Project />
-        <Project />
-        <Project />
-        <Project />
-        <Project />
-        <Project />
+      <Projects>
+        {projects.map((project) => {
+          return <Project key={project.id} project={project}></Project>;
+        })}
       </Projects>
     </Work>
   );
@@ -75,8 +72,9 @@ const Projects = styled(motion.div)`
   margin-left: 100px;
   width: 58rem;
   height: 120vh;
+  z-index: 3;
   display: grid;
-  row-gap: 2rem;
+  row-gap: 1rem;
   column-gap: 4rem;
   grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
 `;
