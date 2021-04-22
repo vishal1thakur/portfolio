@@ -9,24 +9,31 @@ import resume from '../img/resume.svg';
 import styled from 'styled-components';
 // Animation
 import {motion} from 'framer-motion';
+import {pageAnimationHome, titleAnim, fade} from '../Animation';
+// Routing
 import {Link} from 'react-router-dom';
 
 // ------------ 2) JSX ------------------
 
 const Home = () => {
   return (
-    <StyledHomeContent>
+    <StyledHomeContent
+      exit="exit"
+      variants={pageAnimationHome}
+      initial="hidden"
+      animate="show"
+    >
       {/* Main text content of the page */}
       <Banner>
         {/* Greeting */}
-        <h3>HI THERE &#128075;, I'M</h3>
+        <motion.h3 variants={titleAnim}>HI THERE &#128075;, I'M</motion.h3>
 
         {/* Name and Skill */}
-        <Name className="name">
+        <Name variants={titleAnim} className="name">
           <span>VISHAL</span>
           <span>THAKUR</span>
         </Name>
-        <Skill>
+        <Skill variants={titleAnim}>
           <span>DESIGNER</span>
           <span>+</span>
           <span>DEVELOPER</span>
@@ -34,56 +41,74 @@ const Home = () => {
         </Skill>
 
         {/* Description */}
-        <p>
+        <motion.p variants={fade}>
           I am a Front End Developer & Designer based in Mumbai - India;
           passionate about making products that people find meaningful.
-        </p>
+        </motion.p>
 
         {/* Main CTA */}
-        <Button>
+        <Button variants={fade}>
           <Link to="/work" className="button">
             <h4>View My Work</h4>
           </Link>
         </Button>
 
         {/* Footer */}
-        <hr></hr>
-        <p className="copyright">
+        <motion.hr variants={fade}></motion.hr>
+        <motion.p variants={fade} className="copyright">
           &#169; 2021 Vishal Thakur : website crafted in React, deployed on
           Netlify
-        </p>
+        </motion.p>
       </Banner>
 
       {/* Social Links */}
-      <Social>
+      <Social variants={titleAnim}>
         {/* Empty grid items */}
         <div className="box"></div>
         <div className="box"></div>
         <div className="box"></div>
 
         {/* Github link */}
-        <SocialCard>
-          <div className="social github">
-            <img className="social-image" src={github} alt="" />
-            <div className="github-name">GITHUB</div>
-          </div>
-        </SocialCard>
+        <a
+          href="https://github.com/vishal1thakur"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <SocialCard variants={titleAnim}>
+            <div className="social github">
+              <img className="social-image" src={github} alt="" />
+              <div className="github-name">GITHUB</div>
+            </div>
+          </SocialCard>
+        </a>
 
         {/* LinkedIn link */}
-        <SocialCard>
-          <div className="social linkedin">
-            <img className="social-image" src={linkedin} alt="" />
-            <div className="linkedin-name">LINKEDIN</div>
-          </div>
-        </SocialCard>
+        <a
+          href="https://www.linkedin.com/in/vishal1thakur/"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <SocialCard variants={titleAnim}>
+            <div className="social linkedin">
+              <img className="social-image" src={linkedin} alt="" />
+              <div className="linkedin-name">LINKEDIN</div>
+            </div>
+          </SocialCard>
+        </a>
 
         {/* Resume link */}
-        <SocialCard>
-          <div className="social resume">
-            <img className="social-image" src={resume} alt="" />
-            <div className="resume-name">RESUME</div>
-          </div>
-        </SocialCard>
+        <a
+          href="https://github.com/vishal1thakur"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <SocialCard>
+            <div className="social resume">
+              <img className="social-image" src={resume} alt="" />
+              <div className="resume-name">RESUME</div>
+            </div>
+          </SocialCard>
+        </a>
       </Social>
     </StyledHomeContent>
   );
@@ -235,10 +260,16 @@ const Social = styled(motion.div)`
   margin-left: -4rem;
   height: 100vh;
   padding-right: 1000px;
+  a {
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    color: #f3f3f3;
+  }
 `;
 
 // Each Link
-const SocialCard = styled(motion.div)`
+const SocialCard = styled(motion.Link)`
   // Common styles
   width: 100%;
   height: 100%;

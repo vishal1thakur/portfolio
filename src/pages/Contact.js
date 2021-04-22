@@ -9,10 +9,16 @@ import instagram from '../img/Contact/instagram.svg';
 import styled from 'styled-components';
 // Animation
 import {motion} from 'framer-motion';
+import {pageAnimation} from '../Animation';
 
 const Contact = () => {
   return (
-    <StyledContact>
+    <StyledContact
+      exit="exit"
+      variants={pageAnimation}
+      initial="hidden"
+      animate="show"
+    >
       <Header>
         <h2>CONTACT</h2>
         <div className="line"></div>

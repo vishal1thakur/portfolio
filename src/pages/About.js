@@ -3,6 +3,7 @@ import React from 'react';
 import styled from 'styled-components';
 // Animation
 import {motion} from 'framer-motion';
+import {pageAnimation, fade} from '../Animation';
 // Images
 import background from '../img/about/background.svg';
 import fast from '../img/about/fast.svg';
@@ -11,8 +12,15 @@ import responsive from '../img/about/responsive.svg';
 import dynamic from '../img/about/dynamic.svg';
 
 const About = () => {
+  const durationSeconds = 1;
+  const delaySeconds = 0.75;
   return (
-    <AllAbout>
+    <AllAbout
+      exit="exit"
+      variants={pageAnimation}
+      initial="hidden"
+      animate="show"
+    >
       <Header>
         <h2>ABOUT</h2>
         <div className="line"></div>
@@ -70,7 +78,17 @@ const About = () => {
                     <h3>UX RESEARCH</h3>
                   </div>
                   <div className="bar">
-                    <div className="bar-style bar-ux"></div>
+                    <motion.div
+                      inital={{width: `${0}%`}}
+                      animate={{
+                        width: `${85}%`,
+                      }}
+                      transition={{
+                        duration: durationSeconds,
+                        delay: delaySeconds,
+                      }}
+                      className="bar-style bar-ux"
+                    ></motion.div>
                   </div>
                 </div>
               </div>
@@ -81,7 +99,17 @@ const About = () => {
                     <h3>UI DESIGN</h3>
                   </div>
                   <div className="bar">
-                    <div className="bar-style bar-ui"></div>
+                    <motion.div
+                      inital={{width: `${0}%`}}
+                      animate={{
+                        width: `${75}%`,
+                      }}
+                      transition={{
+                        duration: durationSeconds,
+                        delay: delaySeconds,
+                      }}
+                      className="bar-style bar-ui"
+                    ></motion.div>
                   </div>
                 </div>
               </div>
@@ -92,7 +120,17 @@ const About = () => {
                     <h3>FIGMA</h3>
                   </div>
                   <div className="bar">
-                    <div className="bar-style bar-figma"></div>
+                    <motion.div
+                      inital={{width: `${0}%`}}
+                      animate={{
+                        width: `${95}%`,
+                      }}
+                      transition={{
+                        duration: durationSeconds,
+                        delay: delaySeconds,
+                      }}
+                      className="bar-style bar-figma"
+                    ></motion.div>
                   </div>
                 </div>
               </div>
@@ -103,7 +141,17 @@ const About = () => {
                     <h3>SKETCH</h3>
                   </div>
                   <div className="bar">
-                    <div className="bar-style bar-sketch"></div>
+                    <motion.div
+                      inital={{width: `${0}%`}}
+                      animate={{
+                        width: `${65}%`,
+                      }}
+                      transition={{
+                        duration: durationSeconds,
+                        delay: delaySeconds,
+                      }}
+                      className="bar-style bar-sketch"
+                    ></motion.div>
                   </div>
                 </div>
               </div>
@@ -116,7 +164,17 @@ const About = () => {
                     <h3>HTML</h3>
                   </div>
                   <div className="bar">
-                    <div className="bar-style bar-html"></div>
+                    <motion.div
+                      inital={{width: `${0}%`}}
+                      animate={{
+                        width: `${90}%`,
+                      }}
+                      transition={{
+                        duration: durationSeconds,
+                        delay: delaySeconds,
+                      }}
+                      className="bar-style bar-html"
+                    ></motion.div>
                   </div>
                 </div>
               </div>
@@ -127,7 +185,17 @@ const About = () => {
                     <h3>CSS</h3>
                   </div>
                   <div className="bar">
-                    <div className="bar-style bar-css"></div>
+                    <motion.div
+                      inital={{width: `${0}%`}}
+                      animate={{
+                        width: `${85}%`,
+                      }}
+                      transition={{
+                        duration: durationSeconds,
+                        delay: delaySeconds,
+                      }}
+                      className="bar-style bar-css"
+                    ></motion.div>
                   </div>
                 </div>
               </div>
@@ -138,7 +206,17 @@ const About = () => {
                     <h3>JAVASCRIPT</h3>
                   </div>
                   <div className="bar">
-                    <div className="bar-style bar-js"></div>
+                    <motion.div
+                      inital={{width: `${0}%`}}
+                      animate={{
+                        width: `${75}%`,
+                      }}
+                      transition={{
+                        duration: durationSeconds,
+                        delay: delaySeconds,
+                      }}
+                      className="bar-style bar-js"
+                    ></motion.div>
                   </div>
                 </div>
               </div>
@@ -149,7 +227,17 @@ const About = () => {
                     <h3>REACT</h3>
                   </div>
                   <div className="bar">
-                    <div className="bar-style bar-react"></div>
+                    <motion.div
+                      inital={{width: `${0}%`}}
+                      animate={{
+                        width: `${75}%`,
+                      }}
+                      transition={{
+                        duration: durationSeconds,
+                        delay: delaySeconds,
+                      }}
+                      className="bar-style bar-react"
+                    ></motion.div>
                   </div>
                 </div>
               </div>
@@ -362,35 +450,27 @@ const SkillBar = styled(motion.div)`
           border-radius: 3px 0px 0px 3px;
         }
         .bar-ux {
-          width: 85%;
           background: rgba(255, 46, 46, 1);
         }
         .bar-ui {
-          width: 75%;
           background: rgba(255, 46, 46, 1);
         }
         .bar-figma {
-          width: 90%;
           background: rgba(255, 46, 46, 1);
         }
         .bar-sketch {
-          width: 65%;
           background: rgba(255, 46, 46, 1);
         }
         .bar-html {
-          width: 90%;
           background: rgba(46, 117, 255, 1);
         }
         .bar-css {
-          width: 85%;
           background: rgba(46, 117, 255, 1);
         }
         .bar-js {
-          width: 75%;
           background: rgba(46, 117, 255, 1);
         }
         .bar-react {
-          width: 75%;
           background: rgba(46, 117, 255, 1);
         }
       }

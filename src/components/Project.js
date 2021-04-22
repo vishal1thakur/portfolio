@@ -1,7 +1,8 @@
 import React from 'react';
 // Style
 import styled from 'styled-components';
-import {Link} from 'react-router-dom';
+// Animation
+import {motion} from 'framer-motion';
 
 const Project = ({project}) => {
   return (
@@ -35,7 +36,7 @@ const Project = ({project}) => {
   );
 };
 
-const StyledLink = styled(Link)`
+const StyledLink = styled(motion.Link)`
   display: flex;
   flex-direction: column;
   justify-content: center;

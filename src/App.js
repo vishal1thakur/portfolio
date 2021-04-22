@@ -9,30 +9,33 @@ import Home from './pages/Home';
 import Nav from './components/Nav';
 // Styles
 import GlobalStyles from './components/GlobalStyles';
-// Dependencies
-import {Switch, Route} from 'react-router-dom';
+// Routing
+import {Switch, Route, useLocation} from 'react-router-dom';
+// Animation
+import {AnimatePresence} from 'framer-motion';
 
 function App() {
-  // State
-
+  const location = useLocation();
   return (
     <div className="App">
       <GlobalStyles />
       <Nav />
-      <Switch>
-        <Route path="/" exact>
-          <Home />
-        </Route>
-        <Route path="/about">
-          <About />
-        </Route>
-        <Route path="/contact">
-          <Contact />
-        </Route>
-        <Route path="/work">
-          <AllWork />
-        </Route>
-      </Switch>
+      <AnimatePresence exitBeforeEnter>
+        <Switch location={location} key={location.pathname}>
+          <Route path="/" exact>
+            <Home />
+          </Route>
+          <Route path="/about">
+            <About />
+          </Route>
+          <Route path="/contact">
+            <Contact />
+          </Route>
+          <Route path="/work">
+            <AllWork />
+          </Route>
+        </Switch>
+      </AnimatePresence>
     </div>
   );
 }

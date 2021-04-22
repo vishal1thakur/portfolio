@@ -5,18 +5,20 @@ import Project from '../components/Project';
 import styled from 'styled-components';
 // Animation
 import {motion} from 'framer-motion';
+import {pageAnimation, cardAnim} from '../Animation';
+// Project Data
 import data from '../data';
 
 const AllWork = () => {
   const [projects] = useState(data());
 
   return (
-    <Work>
+    <Work exit="exit" variants={pageAnimation} initial="hidden" animate="show">
       <Header>
         <h2>ALL WORK</h2>
         <div className="line"></div>
       </Header>
-      <Projects>
+      <Projects variants={cardAnim}>
         {projects.map((project) => {
           return <Project key={project.id} project={project}></Project>;
         })}
