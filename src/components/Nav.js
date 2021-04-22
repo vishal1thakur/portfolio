@@ -56,7 +56,7 @@ const Nav = () => {
       {/* React */}
       <IconReact>
         <div className="item">
-          <StyledLink to="/">
+          <StyledLink to="/work/react">
             <img src={react} className="react" alt="" />
             <p>REACT</p>
           </StyledLink>

@@ -3,7 +3,7 @@ import React from 'react';
 import styled from 'styled-components';
 // Animation
 import {motion} from 'framer-motion';
-import {pageAnimation, fade} from '../Animation';
+import {pageAnimation, fadeAbout} from '../Animation';
 // Images
 import background from '../img/about/background.svg';
 import fast from '../img/about/fast.svg';
@@ -35,32 +35,76 @@ const About = () => {
           </div>
           <div className="priority">
             <div className="priority-card">
-              <img src={fast} alt="" />
-              <h3 className="priority-text">
+              <motion.img
+                inital={{opacity: 0}}
+                animate={{
+                  opacity: 1,
+                }}
+                transition={{
+                  duration: 1,
+                  delay: 0,
+                }}
+                src={fast}
+                alt=""
+              />
+              <motion.h3 variants={fadeAbout} className="priority-text">
                 FAST <br />
                 LOAD TIMES
-              </h3>
+              </motion.h3>
             </div>
             <div className="priority-card">
-              <img src={responsive} alt="" />
-              <h3 className="priority-text">
+              <motion.img
+                inital={{opacity: 0}}
+                animate={{
+                  opacity: 1,
+                }}
+                transition={{
+                  duration: 1,
+                  delay: 0,
+                }}
+                src={responsive}
+                alt=""
+              />
+              <motion.h3 variants={fadeAbout} className="priority-text">
                 RESPONSIVE
                 <br /> LAYOUT
-              </h3>
+              </motion.h3>
             </div>
             <div className="priority-card">
-              <img src={intuitive} alt="" />
-              <h3 className="priority-text">
+              <motion.img
+                inital={{opacity: 0}}
+                animate={{
+                  opacity: 1,
+                }}
+                transition={{
+                  duration: 1,
+                  delay: 0,
+                }}
+                src={intuitive}
+                alt=""
+              />
+              <motion.h3 variants={fadeAbout} className="priority-text">
                 INTUITIVE
                 <br /> DESIGN
-              </h3>
+              </motion.h3>
             </div>
             <div className="priority-card">
-              <img src={dynamic} alt="" />
-              <h3 className="priority-text">
+              <motion.img
+                inital={{opacity: 0}}
+                animate={{
+                  opacity: 1,
+                }}
+                transition={{
+                  duration: 1,
+                  delay: 0,
+                }}
+                src={dynamic}
+                alt=""
+              />
+              <motion.h3 variants={fadeAbout} className="priority-text">
                 DYNAMIC
                 <br /> INTERACTIONS
-              </h3>
+              </motion.h3>
             </div>
           </div>
         </Tenets>

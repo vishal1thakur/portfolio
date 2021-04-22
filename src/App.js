@@ -7,6 +7,7 @@ import AllWork from './pages/AllWork';
 // Components
 import Home from './pages/Home';
 import Nav from './components/Nav';
+import ReactSection from './pages/ReactSection';
 // Styles
 import GlobalStyles from './components/GlobalStyles';
 // Routing
@@ -31,8 +32,11 @@ function App() {
           <Route path="/contact">
             <Contact />
           </Route>
-          <Route path="/work">
+          <Route path="/work" exact>
             <AllWork />
+          </Route>
+          <Route path="/work/react">
+            <ReactSection />
           </Route>
         </Switch>
       </AnimatePresence>

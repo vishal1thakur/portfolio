@@ -19,7 +19,7 @@ function projects() {
       link: '/about',
     },
     {
-      name: 'HYMN Music App',
+      name: 'Pallette Maker',
       type: 'JAVASCRIPT',
       cover:
         'https://images.unsplash.com/photo-1583119912267-cc97c911e416?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80',
@@ -27,7 +27,7 @@ function projects() {
       link: '/about',
     },
     {
-      name: 'HYMN Music App',
+      name: 'GameTown',
       type: 'REACT',
       cover:
         'https://images.unsplash.com/photo-1583119912267-cc97c911e416?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80',
@@ -35,7 +35,15 @@ function projects() {
       link: '/about',
     },
     {
-      name: 'HYMN Music App',
+      name: 'Catalogue Website',
+      type: 'JAVASCRIPT',
+      cover:
+        'https://images.unsplash.com/photo-1583119912267-cc97c911e416?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80',
+      id: uuidv4(),
+      link: '/about',
+    },
+    {
+      name: 'FlatSlat',
       type: 'REACT',
       cover:
         'https://images.unsplash.com/photo-1583119912267-cc97c911e416?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80',
@@ -43,32 +51,24 @@ function projects() {
       link: '/about',
     },
     {
-      name: 'HYMN Music App',
-      type: 'REACT',
+      name: 'FasTag Redesign',
+      type: 'UX / UI',
       cover:
         'https://images.unsplash.com/photo-1583119912267-cc97c911e416?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80',
       id: uuidv4(),
       link: '/about',
     },
     {
-      name: 'HYMN Music App',
-      type: 'REACT',
+      name: 'Pig Dice Game',
+      type: 'JAVASCRIPT',
       cover:
         'https://images.unsplash.com/photo-1583119912267-cc97c911e416?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80',
       id: uuidv4(),
       link: '/about',
     },
     {
-      name: 'HYMN Music App',
-      type: 'REACT',
-      cover:
-        'https://images.unsplash.com/photo-1583119912267-cc97c911e416?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80',
-      id: uuidv4(),
-      link: '/about',
-    },
-    {
-      name: 'HYMN Music App',
-      type: 'REACT',
+      name: 'Smart RCO',
+      type: 'UX / UI',
       cover:
         'https://images.unsplash.com/photo-1583119912267-cc97c911e416?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80',
       id: uuidv4(),

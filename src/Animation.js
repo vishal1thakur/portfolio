@@ -61,6 +61,14 @@ export const fade = {
   },
 };
 
+export const fadeAbout = {
+  hidden: {opacity: 0},
+  show: {
+    opacity: 1,
+    transition: {duration: 1, ease: 'easeOut'},
+  },
+};
+
 export const cardAnim = {
   hidden: {y: 10},
   show: {
