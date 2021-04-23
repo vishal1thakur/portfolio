@@ -1,0 +1,44 @@
+nav {
+  margin-top: 5px;
+  margin-left: 100px;
+  min-height: 10vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    border: 1.5px solid rgb(201, 97, 173);
+    color: rgb(201, 97, 173);
+    font-weight: 600;
+    border-radius: 5px;
+    outline: none;
+    transition: all 0.3s ease;
+    &:hover {
+      border-color: rgb(27, 27, 27);
+      background: rgb(145, 72, 125);
+      color: #c4bac2;
+      outline: none;
+    }
+  }
+  .library-active {
+    border-color: rgb(27, 27, 27);
+    background: rgb(145, 72, 125);
+    color: #c4bac2;
+    outline: none;
+  }
+  h1 {
+    font-size: 1.5rem;
+    color: white;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  nav {
+    button {
+      z-index: 10;
+    }
+  }
+}

@@ -1,5 +1,7 @@
 import React from 'react';
 import {} from 'react-router-dom';
+//Apps
+import HymnApp from './projects/HYMN/HymnApp';
 //Pages
 import About from './pages/About';
 import Contact from './pages/Contact';
@@ -37,7 +39,7 @@ function App() {
           <Route path="/work" exact>
             <AllWork />
           </Route>
-          <Route path="/work/react">
+          <Route path="/work/react" exact>
             <ReactSection />
           </Route>
           <Route path="/work/js">
@@ -45,6 +47,9 @@ function App() {
           </Route>
           <Route path="/work/ux">
             <UXSection />
+          </Route>
+          <Route path="/work/react/hymn">
+            <HymnApp />
           </Route>
         </Switch>
       </AnimatePresence>
