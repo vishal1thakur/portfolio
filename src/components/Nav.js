@@ -36,14 +36,14 @@ const Nav = () => {
         </div>
       </Icon>
       {/* Contact */}
-      <Icon>
+      {/* <Icon>
         <div className="item">
           <StyledLink to="/contact">
             <img src={contact} alt="" />
             <p>CONTACT</p>
           </StyledLink>
         </div>
-      </Icon>
+      </Icon> */}
       {/* All Work */}
       <Icon>
         <div className="item">
@@ -108,7 +108,7 @@ const Logo = styled(motion.div)`
 const Icon = styled(motion.div)`
   /* background: #ffffff; */
   width: 100%;
-  height: 100px;
+  height: 120px;
   display: flex;
   flex-direction: column;
   text-align: center;

@@ -2,6 +2,7 @@ import React from 'react';
 import {} from 'react-router-dom';
 //Apps
 import HymnApp from './projects/HYMN/HymnApp';
+import GameTownApp from './projects/GameTown/GameTownApp';
 //Pages
 import About from './pages/About';
 import Contact from './pages/Contact';
@@ -50,6 +51,9 @@ function App() {
           </Route>
           <Route path="/work/react/hymn">
             <HymnApp />
+          </Route>
+          <Route path="/work/react/gametown">
+            <GameTownApp />
           </Route>
         </Switch>
       </AnimatePresence>
