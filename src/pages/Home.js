@@ -74,7 +74,7 @@ const Home = () => {
           target="_blank"
           rel="noreferrer"
         >
-          <SocialCard variants={titleAnim}>
+          <SocialCard>
             <div className="social github">
               <img className="social-image" src={github} alt="" />
               <div className="github-name">GITHUB</div>
@@ -88,7 +88,7 @@ const Home = () => {
           target="_blank"
           rel="noreferrer"
         >
-          <SocialCard variants={titleAnim}>
+          <SocialCard>
             <div className="social linkedin">
               <img className="social-image" src={linkedin} alt="" />
               <div className="linkedin-name">LINKEDIN</div>

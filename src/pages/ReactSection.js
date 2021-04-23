@@ -1,4 +1,7 @@
-import React from 'react';
+import React, {useState} from 'react';
+// Components
+
+import SeparateProject from '../components/SeparateProject';
 // Style
 import styled from 'styled-components';
 // Animation
@@ -7,23 +10,32 @@ import {pageAnimation, cardAnim} from '../Animation';
 // Project Data
 import data from '../data';
 
-const ReactSection = () => {
+const AllWork = () => {
+  const [projects] = useState(data());
+
   return (
-    <StyledReact
-      exit="exit"
-      variants={pageAnimation}
-      initial="hidden"
-      animate="show"
-    >
+    <Work exit="exit" variants={pageAnimation} initial="hidden" animate="show">
       <Header>
         <h2>REACT</h2>
         <div className="line"></div>
       </Header>
-    </StyledReact>
+      <Projects variants={cardAnim}>
+        {projects.map((project) => {
+          if (project.type === 'REACT') {
+            return (
+              <SeparateProject
+                key={project.id}
+                project={project}
+              ></SeparateProject>
+            );
+          }
+        })}
+      </Projects>
+    </Work>
   );
 };
 
-const StyledReact = styled(motion.div)`
+const Work = styled(motion.div)`
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -65,4 +77,19 @@ const Header = styled(motion.div)`
   }
 `;
 
-export default ReactSection;
+const Projects = styled(motion.div)`
+  margin-top: 0.5rem;
+  margin-left: 100px;
+  width: 45rem;
+  height: 120vh;
+  display: grid;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  row-gap: 1rem;
+  column-gap: 4rem;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+`;
+
+export default AllWork;

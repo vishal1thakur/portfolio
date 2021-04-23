@@ -65,7 +65,7 @@ const Nav = () => {
       {/* JavaScript */}
       <Icon>
         <div className="item">
-          <StyledLink to="/">
+          <StyledLink to="/work/js">
             <img src={java_script} alt="" />
             <p>JAVASCRIPT</p>
           </StyledLink>
@@ -74,7 +74,7 @@ const Nav = () => {
       {/* UX/UI */}
       <Icon>
         <div className="item">
-          <StyledLink to="/">
+          <StyledLink to="/work/ux">
             <img src={ux} alt="" />
             <p>UX/UI</p>
           </StyledLink>

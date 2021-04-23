@@ -3,40 +3,44 @@ import React from 'react';
 import styled from 'styled-components';
 // Animation
 import {motion} from 'framer-motion';
+// Routing
+import {Link} from 'react-router-dom';
 
 const Project = ({project}) => {
   return (
-    <StyledLink to={project.link}>
-      <div className="grey-bg"></div>
-      <div className="content-bg">
-        <div className="image"></div>
-        <div className="content">
-          <div className="project-name">
-            <h4>{project.name}</h4>
-          </div>
-          <div className="type">
-            <div
-              className="type-box"
-              style={
-                project.type === 'REACT'
-                  ? {backgroundColor: '#2E75FF'}
-                  : project.type === 'UX / UI'
-                  ? {backgroundColor: '#FF2E2E'}
-                  : project.type === 'JAVASCRIPT'
-                  ? {backgroundColor: 'rgba(255, 205, 46, 0.8)'}
-                  : 'black'
-              }
-            >
-              <h5>{project.type}</h5>
+    <StyledProject>
+      <Link to={project.link}>
+        <div className="grey-bg"></div>
+        <div className="content-bg">
+          <div className="image"></div>
+          <div className="content">
+            <div className="project-name">
+              <h4>{project.name}</h4>
+            </div>
+            <div className="type">
+              <div
+                className="type-box"
+                style={
+                  project.type === 'REACT'
+                    ? {backgroundColor: '#2E75FF'}
+                    : project.type === 'UX / UI'
+                    ? {backgroundColor: '#FF3E3E'}
+                    : project.type === 'JAVASCRIPT'
+                    ? {backgroundColor: 'rgba(255, 205, 46, 0.8)'}
+                    : 'black'
+                }
+              >
+                <h5>{project.type}</h5>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </StyledLink>
+      </Link>
+    </StyledProject>
   );
 };
 
-const StyledLink = styled(motion.Link)`
+const StyledProject = styled(motion.div)`
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -74,7 +78,7 @@ const StyledLink = styled(motion.Link)`
     .image {
       width: 100%;
       height: 80%;
-      background: #585858;
+      background: #454a52;
       border-radius: 5px;
     }
     .content {
