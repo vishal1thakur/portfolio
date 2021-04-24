@@ -67,6 +67,12 @@ const Logo = styled(motion.div)`
   img {
     height: 2rem;
     width: 2rem;
+    display: block;
+  }
+
+  input {
+    font-weight: bold;
+    font-family: 'Mukta', sans-serif;
   }
 `;
 

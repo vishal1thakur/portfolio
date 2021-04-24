@@ -3,14 +3,14 @@ import React from 'react';
 import Home from './pages/Home';
 import Nav from './components/Nav';
 // Styles
-import GlobalStyles from './components/GlobalStyles';
+import GlobalStylesGT from './components/GlobalStyles';
 // Router
 import {Route} from 'react-router-dom';
 
 function GameTownApp() {
   return (
-    <div className="App">
-      <GlobalStyles />
+    <div className="App" style={{marginLeft: '100px'}}>
+      <GlobalStylesGT />
       <Nav />
       <Route path={['/game/:id', '/']}>
         <Home />

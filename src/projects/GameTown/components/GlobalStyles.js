@@ -1,6 +1,6 @@
 import {createGlobalStyle} from 'styled-components';
 
-const GlobalStyles = createGlobalStyle`
+const GlobalStylesGT = createGlobalStyle`
 *{
   margin: 0;
   padding: 0;
@@ -18,12 +18,10 @@ html {
   }
 }
 body {
-  font-family: 'Mukta', sans-serif;
   width: 100%;
 }
 h2{
   font-size: 3rem;
-  font-family: 'Abril Fatface', cursive;
   font-weight: lighter;
   color: #333;
 }
@@ -33,23 +31,13 @@ h3{
   padding: 0.8rem 0;
 
 }
-p{
-  font-size: 0.9rem;
-  line-height: 200%;
-  color: #696969;
-}
+
 a{
   text-decoration: none;
   color: #333;
 
 }
-img {
-  display: block;
-}
-input{
-  font-weight: bold;
-  font-family: 'Mukta', sans-serif;
-}
+
 `;
 
-export default GlobalStyles;
+export default GlobalStylesGT;

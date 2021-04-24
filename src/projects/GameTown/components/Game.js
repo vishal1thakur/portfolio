@@ -53,6 +53,11 @@ const StyledGame = styled(motion.div)`
     height: 40vh;
     object-fit: cover;
   }
+  p {
+    font-size: 0.9rem;
+    line-height: 200%;
+    color: #696969;
+  }
 `;
 
 export default Game;

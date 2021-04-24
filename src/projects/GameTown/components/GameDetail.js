@@ -154,6 +154,11 @@ const Stats = styled(motion.div)`
     height: 2rem;
     display: inline;
   }
+  p {
+    font-size: 0.9rem;
+    line-height: 200%;
+    color: #696969;
+  }
 `;
 
 const Info = styled(motion.div)`
