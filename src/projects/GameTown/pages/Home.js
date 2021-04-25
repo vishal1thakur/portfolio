@@ -97,15 +97,17 @@ const GameList = styled(motion.div)`
   font-family: 'Mukta', sans-serif;
   padding: 0rem 5rem;
   h2 {
-    padding: 5rem 0rem;
+    padding: 5rem 1rem;
   }
 `;
 const Games = styled(motion.div)`
   min-height: 80vh;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   grid-column-gap: 3rem;
   grid-row-gap: 5rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
 `;
 
 export default Home;

@@ -5,13 +5,17 @@ const GlobalStylesGT = createGlobalStyle`
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  --primary-color: #A60DFF;
+  --meta-color: #12181b;
+
+
 }
 html {
   &::-webkit-scrollbar{
     width: 0.5rem;
   }
   &::-webkit-scrollbar-thumb{
-    background-color: darkgrey;
+    background-color: var(--meta-color);
   }
   &::-webkit-scrollbar-track {
     background: white;
@@ -19,6 +23,7 @@ html {
 }
 body {
   width: 100%;
+  background: #D8D8D8;
 }
 h2{
   font-size: 3rem;

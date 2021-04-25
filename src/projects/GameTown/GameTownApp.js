@@ -12,7 +12,7 @@ function GameTownApp() {
     <div className="App" style={{marginLeft: '100px'}}>
       <GlobalStylesGT />
       <Nav />
-      <Route path={['/game/:id', '/']}>
+      <Route path={['/work/react/gametown/game/:id', '/']}>
         <Home />
       </Route>
     </div>

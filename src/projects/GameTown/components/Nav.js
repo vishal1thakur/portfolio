@@ -27,7 +27,6 @@ const Nav = () => {
     <StyledNav variants={fadeIn} initial="hidden" animate="show">
       <Logo onClick={clearSearched}>
         <img src={logo} alt="logo" />
-        <h1>Ignite</h1>
       </Logo>
       <form className="search">
         <input value={textInput} onChange={inputHandler} type="text" />
@@ -40,39 +39,39 @@ const Nav = () => {
 };
 
 const StyledNav = styled(motion.div)`
-  padding: 3rem 5rem;
   text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2rem;
+  width: 100%;
+  .search {
+    margin-right: 3rem;
+    width: 40%;
+  }
   input {
-    width: 30%;
-    font-size: 1.5rem;
+    width: 60%;
+    font-size: 1.2rem;
     padding: 0.5rem;
     border: none;
-    margin-top: 1rem;
+    border-radius: 5px 0px 0px 5px;
     box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.2);
   }
   button {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     border: none;
+    border-radius: 0px 5px 5px 0px;
     padding: 0.5rem 2rem;
     cursor: pointer;
-    background: #ff7676;
+    background: var(--primary-color);
     color: white;
   }
 `;
 const Logo = styled(motion.div)`
-  display: flex;
-  justify-content: center;
-  padding: 1rem;
   cursor: pointer;
   img {
-    height: 2rem;
-    width: 2rem;
-    display: block;
-  }
-
-  input {
-    font-weight: bold;
-    font-family: 'Mukta', sans-serif;
+    width: 15rem;
+    margin-left: 6rem;
   }
 `;
 
