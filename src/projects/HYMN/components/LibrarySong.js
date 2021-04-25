@@ -42,7 +42,7 @@ const LibrarySong = ({
     >
       <img src={cover} alt="" />
       <div className="song-description">
-        <h3>{name}</h3>
+        <h3 className={` ${active ? 'active' : ''}`}>{name}</h3>
         <h4>{artist}</h4>
       </div>
     </div>

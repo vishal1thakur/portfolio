@@ -1,6 +1,7 @@
 import React from 'react';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import {faMusic} from '@fortawesome/free-solid-svg-icons';
+import logo from '../img/logo.svg';
 
 const Nav = ({setLibraryStatus, libraryStatus}) => {
   const openLibraryHandler = () => {
@@ -9,7 +10,7 @@ const Nav = ({setLibraryStatus, libraryStatus}) => {
 
   return (
     <nav>
-      <h1>Hymn</h1>
+      <img className="logo" src={logo} alt="" />
       <button
         className={libraryStatus ? 'library-active' : ''}
         onClick={openLibraryHandler}
