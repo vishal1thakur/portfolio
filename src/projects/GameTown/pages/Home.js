@@ -1,113 +1,153 @@
 import React, {useEffect} from 'react';
-// Redux
+import GameDetail from '../components/GameDetail';
+//Redux
 import {useDispatch, useSelector} from 'react-redux';
 import {loadGames} from '../actions/gamesAction';
-// Components
+//Components
 import Game from '../components/Game';
-import GameDetail from '../components/GameDetail';
-// Styling and Animation
+//Styling and Animation
 import styled from 'styled-components';
 import {motion, AnimatePresence, AnimateSharedLayout} from 'framer-motion';
 import {useLocation} from 'react-router-dom';
 import {fadeIn} from '../animations';
 
 const Home = () => {
-  // Get the current location
+  //get the current location
   const location = useLocation();
-  const pathId = location.pathname.split('/')[2];
-  // FETCH GAMES
+  const pathId = location.pathname.split('/')[5];
+
+  //FETCH GAMES
   const dispatch = useDispatch();
   useEffect(() => {
     dispatch(loadGames());
   }, [dispatch]);
-  // Get that data back
+  //Get that data back
   const {popular, newGames, upcoming, searched} = useSelector(
     (state) => state.games
   );
-
   return (
-    <GameList variants={fadeIn} inital="hidden" animate="show">
-      <AnimateSharedLayout type="crossfade">
-        <AnimatePresence>
-          {pathId && <GameDetail pathId={pathId} />}
-        </AnimatePresence>
-        {searched.length ? (
-          <div className="searched">
-            <h2>Searched Games</h2>
-            <Games>
-              {searched.map((game) => (
-                <Game
-                  name={game.name}
-                  released={game.released}
-                  id={game.id}
-                  image={game.background_image}
-                  key={game.id}
-                />
-              ))}
-            </Games>
+    <GameList>
+      {pathId && <GameDetail pathId={pathId} />}
+
+      {searched.length ? (
+        <div className="searched">
+          <div className="heads">
+            <h2>
+              <span className="highlight">Searched</span> Games
+            </h2>
+            <div className="line"></div>
           </div>
-        ) : (
-          ''
-        )}
+          <Games>
+            {searched.map((game) => (
+              <Game
+                name={game.name}
+                released={game.released}
+                id={game.id}
+                image={game.background_image}
+                key={game.id}
+              />
+            ))}
+          </Games>
+        </div>
+      ) : (
+        ''
+      )}
 
-        <h2>Upcoming Games</h2>
-        <Games>
-          {upcoming.map((game) => (
-            <Game
-              name={game.name}
-              released={game.released}
-              id={game.id}
-              image={game.background_image}
-              key={game.id}
-            />
-          ))}
-        </Games>
-
-        <h2>Popular Games</h2>
-        <Games>
-          {popular.map((game) => (
-            <Game
-              name={game.name}
-              released={game.released}
-              id={game.id}
-              image={game.background_image}
-              key={game.id}
-            />
-          ))}
-        </Games>
-
-        <h2>New Games</h2>
-        <Games>
-          {newGames.map((game) => (
-            <Game
-              name={game.name}
-              released={game.released}
-              id={game.id}
-              image={game.background_image}
-              key={game.id}
-            />
-          ))}
-        </Games>
-      </AnimateSharedLayout>
+      <div className="heads">
+        <h2>
+          <span className="highlight">Top</span> of the Charts
+        </h2>
+        <div className="line"></div>
+      </div>
+      <Games>
+        {popular.map((game) => (
+          <Game
+            name={game.name}
+            released={game.released}
+            id={game.id}
+            image={game.background_image}
+            key={game.id}
+          />
+        ))}
+      </Games>
+      <div className="heads">
+        <h2>
+          <span className="highlight">Hot</span> Releases
+        </h2>
+        <div className="line"></div>
+      </div>
+      <Games>
+        {newGames.map((game) => (
+          <Game
+            name={game.name}
+            released={game.released}
+            id={game.id}
+            image={game.background_image}
+            key={game.id}
+          />
+        ))}
+      </Games>
+      <div className="heads">
+        <h2>
+          <span className="highlight">Upcoming</span> Releases
+        </h2>
+        <div className="line"></div>
+      </div>
+      <Games>
+        {upcoming.map((game) => (
+          <Game
+            name={game.name}
+            released={game.released}
+            id={game.id}
+            image={game.background_image}
+            key={game.id}
+          />
+        ))}
+      </Games>
     </GameList>
   );
 };
 
 const GameList = styled(motion.div)`
-  font-family: 'Mukta', sans-serif;
-  padding: 0rem 5rem;
-  h2 {
-    padding: 5rem 1rem;
+  padding: 0rem 6rem;
+  .heads {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    h2 {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 900;
+      padding: 6rem 0rem 0.5rem 0rem;
+      font-size: 1.9rem;
+      color: #3d3d3d;
+      .highlight {
+        color: var(--primary-color);
+      }
+    }
+    .line {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      text-align: center;
+      align-items: center;
+
+      border-top: 2px dashed rgba(106, 106, 106, 0.8);
+      border-left: 0px;
+      border-bottom: 0px;
+      border-right: 0px;
+      width: 100%;
+      opacity: 0.4;
+      padding-bottom: 2rem;
+    }
   }
 `;
+
 const Games = styled(motion.div)`
   min-height: 80vh;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  grid-column-gap: 3rem;
+  grid-column-gap: 5rem;
   grid-row-gap: 5rem;
-  margin-left: 1rem;
-  margin-right: 1rem;
 `;
 
 export default Home;
