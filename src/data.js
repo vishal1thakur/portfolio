@@ -58,12 +58,12 @@ function projects() {
         'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt, mollitia accusantium. Esse enim praesentium ducimus, voluptatum expedita explicabo neque id.',
     },
     {
-      name: 'FlatSlat',
+      name: 'Stripe Landing',
       type: 'REACT',
       cover:
         'https://images.unsplash.com/photo-1583119912267-cc97c911e416?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80',
       id: uuidv4(),
-      link: '/about',
+      link: '/work/react/stripe',
       date: 'March 2021',
       description:
         'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt, mollitia accusantium. Esse enim praesentium ducimus, voluptatum expedita explicabo neque id.',

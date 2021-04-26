@@ -1,9 +1,9 @@
 import React from 'react';
 //Components and pages
 import Home from './pages/Home';
-import Nav from './components/Nav';
+import Nav from './components/NavGT';
 //Styles
-import GlobalStyles from './components/GlobalStyles';
+import GlobalStyles from './components/GlobalStylesGT';
 //Router
 import {Route} from 'react-router-dom';
 

@@ -3,6 +3,7 @@ import {} from 'react-router-dom';
 //Apps
 import HymnApp from './projects/HYMN/HymnApp';
 import GameTownApp from './projects/GameTown/GameTownApp';
+import StripeApp from './projects/Stripe/StripeApp';
 //Pages
 import About from './pages/About';
 import Contact from './pages/Contact';
@@ -54,6 +55,9 @@ function App() {
           </Route>
           <Route path="/work/react/gametown">
             <GameTownApp />
+          </Route>
+          <Route path="/work/react/stripe">
+            <StripeApp />
           </Route>
         </Switch>
       </AnimatePresence>

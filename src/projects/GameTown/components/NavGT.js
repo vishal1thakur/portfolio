@@ -27,9 +27,14 @@ const Nav = () => {
       <Logo onClick={clearSearched}>
         <img src={logo} alt="logo" />
       </Logo>
-      <form className="search">
-        <input value={textInput} onChange={inputHandler} type="text" />
-        <button onClick={submitSearch} type="submit">
+      <form className="searchGT">
+        <input
+          className="inputGT"
+          value={textInput}
+          onChange={inputHandler}
+          type="text"
+        />
+        <button className="buttonGT" onClick={submitSearch} type="submit">
           Search
         </button>
       </form>
@@ -44,11 +49,11 @@ const StyledNav = styled(motion.div)`
   align-items: center;
   margin-top: 2rem;
   width: 100%;
-  .search {
+  .searchGT {
     margin-right: 3rem;
     width: 40%;
   }
-  input {
+  .inputGT {
     width: 60%;
     font-size: 1rem;
     padding: 0.4rem;
@@ -56,7 +61,7 @@ const StyledNav = styled(motion.div)`
     border-radius: 5px 0px 0px 5px;
     box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.2);
   }
-  button {
+  .buttonGT {
     font-size: 1rem;
     border: none;
     border-radius: 0px 5px 5px 0px;
