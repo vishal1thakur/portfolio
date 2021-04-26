@@ -123,13 +123,14 @@ const StyledHomeContent = styled(motion.div)`
   flex-wrap: wrap;
   margin-left: 100px;
   height: 100vh;
+
   overflow: hidden;
   color: #ffffff;
 `;
 
 // Main content section
 const Banner = styled(motion.div)`
-  margin-left: 1.5rem;
+  margin-left: 3rem;
   padding: 10rem 10rem 20rem 10rem;
   width: 53rem;
 
@@ -257,7 +258,7 @@ const Social = styled(motion.div)`
   grid-template-areas:
     '. . .'
     '. . .';
-  margin-left: -4rem;
+  margin-left: -2rem;
   height: 100vh;
   padding-right: 1000px;
   a {

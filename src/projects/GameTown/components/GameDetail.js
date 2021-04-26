@@ -79,7 +79,7 @@ const GameDetail = ({pathId}) => {
                 <div className="contents">
                   <div className="released-on">
                     <p>Released On: </p>
-                    <p className="released">{game.released}</p>
+                    <p className="released">{game.released || '-'}</p>
                   </div>
                   <div className="rating">
                     <p>Rating: </p>
@@ -111,9 +111,7 @@ const GameDetail = ({pathId}) => {
             <Description>
               <p>Description:</p>
               <p className="des">
-                {game.description_raw
-                  ? game.description_raw
-                  : 'No Description Available'}
+                {game.description_raw || 'No Description Available'}
               </p>
             </Description>
             <Screenshots>
@@ -126,9 +124,7 @@ const GameDetail = ({pathId}) => {
                     key={screen.id}
                     alt={screen.image}
                   />
-                )) || (
-                  <img src="https://www.wildhareboca.com/wp-content/uploads/sites/310/2018/03/image-not-available.jpg" />
-                )}
+                )) || 'No Screenshot Available'}
               </div>
             </Screenshots>
           </Detail>
