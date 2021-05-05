@@ -47,7 +47,10 @@ function HymnApp() {
     return;
   };
   return (
-    <div className={`App ${libraryStatus ? 'library-active' : ''}`}>
+    <div
+      style={{overflow: 'hidden'}}
+      className={`App ${libraryStatus ? 'library-active' : ''}`}
+    >
       <Nav libraryStatus={libraryStatus} setLibraryStatus={setLibraryStatus} />
       <Song isPlaying={isPlaying} currentSong={currentSong} />
       <Player

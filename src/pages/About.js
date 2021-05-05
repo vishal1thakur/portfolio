@@ -468,8 +468,8 @@ const SkillBar = styled(motion.div)`
       .skill-name {
         width: 30%;
         font-size: 9px;
-        color: #ffcd2e;
         h3 {
+          color: #ffcd2e;
           font-weight: 500;
           letter-spacing: 0.1em;
         }

@@ -4,6 +4,10 @@ import {} from 'react-router-dom';
 import HymnApp from './projects/HYMN/HymnApp';
 import GameTownApp from './projects/GameTown/GameTownApp';
 import StripeApp from './projects/Stripe/StripeApp';
+import OBS from './projects/OBS Visualizer/OBS';
+import RCO from './projects/Smart RCO/RCO';
+import Nomos from './projects/Nomos/Nomos';
+
 //Pages
 import About from './pages/About';
 import Contact from './pages/Contact';
@@ -47,7 +51,7 @@ function App() {
           <Route path="/work/js">
             <JSSection />
           </Route>
-          <Route path="/work/ux">
+          <Route path="/work/ux" exact>
             <UXSection />
           </Route>
           <Route path="/work/react/hymn">
@@ -58,6 +62,15 @@ function App() {
           </Route>
           <Route path="/work/react/stripe">
             <StripeApp />
+          </Route>
+          <Route path="/work/ux/obs">
+            <OBS />
+          </Route>
+          <Route path="/work/ux/rco">
+            <RCO />
+          </Route>
+          <Route path="/work/ux/nomos">
+            <Nomos />
           </Route>
         </Switch>
       </AnimatePresence>

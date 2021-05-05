@@ -64,7 +64,7 @@ const StyledProject = styled(motion.div)`
     top: 15px;
     left: 0;
     background: #2a2e35;
-    border-radius: 5px 5px 8px 5px;
+    border-radius: 5px 5px 5px 5px;
   }
   .content-bg {
     top: 0;

@@ -35,7 +35,7 @@ const Nav = () => {
           type="text"
         />
         <button className="buttonGT" onClick={submitSearch} type="submit">
-          Search
+          Search a Game
         </button>
       </form>
     </StyledNav>

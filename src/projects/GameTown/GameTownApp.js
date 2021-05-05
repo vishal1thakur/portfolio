@@ -6,16 +6,18 @@ import Nav from './components/NavGT';
 import GlobalStyles from './components/GlobalStylesGT';
 //Router
 import {Route} from 'react-router-dom';
+// Animation
+import {motion} from 'framer-motion';
 
 function GameTownApp() {
   return (
-    <div className="App" style={{marginLeft: '100px'}}>
+    <motion.div className="App" style={{marginLeft: '100px'}}>
       <GlobalStyles />
       <Nav />
       <Route path={['/work/react/gametown/game/:id', '/work/react/gametown']}>
         <Home />
       </Route>
-    </div>
+    </motion.div>
   );
 }
 

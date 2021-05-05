@@ -7,6 +7,19 @@ const GlobalStyles = createGlobalStyle`
   box-sizing: border-box;
   
 }
+
+html {
+  &::-webkit-scrollbar{
+    width: 0.5rem;
+  }
+  &::-webkit-scrollbar-thumb{
+    background: #FFCD2E;
+  }
+  &::-webkit-scrollbar-track {
+    background: none;
+  }
+}
+
 body {
   font-family: 'Rubik', sans-serif;
   background-color: #12181b;

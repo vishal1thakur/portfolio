@@ -19,13 +19,13 @@ function projects() {
       cover:
         'https://images.unsplash.com/photo-1583119912267-cc97c911e416?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80',
       id: uuidv4(),
-      link: '/about',
+      link: '/work/ux/obs',
       date: 'March 2021',
       description:
         'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt, mollitia accusantium. Esse enim praesentium ducimus, voluptatum expedita explicabo neque id.',
     },
     {
-      name: 'Pallette Maker',
+      name: 'Rangeen',
       type: 'JAVASCRIPT',
       cover:
         'https://images.unsplash.com/photo-1583119912267-cc97c911e416?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80',
@@ -47,7 +47,7 @@ function projects() {
         'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt, mollitia accusantium. Esse enim praesentium ducimus, voluptatum expedita explicabo neque id.',
     },
     {
-      name: 'Catalogue Website',
+      name: 'Pictel',
       type: 'JAVASCRIPT',
       cover:
         'https://images.unsplash.com/photo-1583119912267-cc97c911e416?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80',
@@ -69,23 +69,23 @@ function projects() {
         'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt, mollitia accusantium. Esse enim praesentium ducimus, voluptatum expedita explicabo neque id.',
     },
     {
-      name: 'FasTag Redesign',
+      name: 'Nomos',
       type: 'UX / UI',
       cover:
         'https://images.unsplash.com/photo-1583119912267-cc97c911e416?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80',
       id: uuidv4(),
-      link: '/about',
+      link: '/work/ux/nomos',
       date: 'March 2021',
       description:
         'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt, mollitia accusantium. Esse enim praesentium ducimus, voluptatum expedita explicabo neque id.',
     },
     {
-      name: 'Pig Dice Game',
+      name: 'ToDo List',
       type: 'JAVASCRIPT',
       cover:
         'https://images.unsplash.com/photo-1583119912267-cc97c911e416?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80',
       id: uuidv4(),
-      link: '/about',
+      link: '/work/java_script/todo',
       date: 'March 2021',
       description:
         'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt, mollitia accusantium. Esse enim praesentium ducimus, voluptatum expedita explicabo neque id.',
@@ -96,7 +96,7 @@ function projects() {
       cover:
         'https://images.unsplash.com/photo-1583119912267-cc97c911e416?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80',
       id: uuidv4(),
-      link: '/about',
+      link: '/work/ux/rco',
       date: 'March 2021',
       description:
         'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt, mollitia accusantium. Esse enim praesentium ducimus, voluptatum expedita explicabo neque id.',

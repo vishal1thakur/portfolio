@@ -126,6 +126,9 @@ const StyledHomeContent = styled(motion.div)`
 
   overflow: hidden;
   color: #ffffff;
+  @media only screen and (max-width: 600px) {
+    margin-left: 0px;
+  }
 `;
 
 // Main content section
@@ -167,6 +170,26 @@ const Banner = styled(motion.div)`
     font-size: 11px;
     opacity: 0.6;
   }
+  @media only screen and (max-width: 600px) {
+    margin-left: 0rem;
+    padding: 7rem 2rem 5rem 2rem;
+    width: 100%;
+
+    h3 {
+      font-size: 0.8rem;
+    }
+
+    p {
+      font-size: 0.9rem;
+    }
+
+    .copyright {
+      padding-top: 0.5rem;
+    }
+    hr {
+      margin-top: 7.5rem;
+    }
+  }
 `;
 
 // Name and Skill
@@ -182,6 +205,10 @@ const Name = styled(motion.div)`
   letter-spacing: 0.12em;
   width: 100%;
   color: #ffffff;
+  @media only screen and (max-width: 600px) {
+    width: 80%;
+    font-size: 2.9rem;
+  }
 `;
 
 const Skill = styled(motion.div)`
@@ -201,6 +228,10 @@ const Skill = styled(motion.div)`
   .laptop {
     opacity: 0.5;
   }
+
+  @media only screen and (max-width: 600px) {
+    font-size: 0.8rem;
+  } ;
 `;
 
 // CTA
@@ -233,10 +264,20 @@ const Button = styled(motion.div)`
       transition: opacity 0.5s ease;
     }
   }
-  .button:hover {
-    box-shadow: 0px 0px 15px 5px rgba(255, 205, 46, 0.08);
-    h4 {
-      opacity: 1;
+  @media only screen and (min-width: 600px) {
+    .button:hover {
+      box-shadow: 0px 0px 15px 5px rgba(255, 205, 46, 0.08);
+      h4 {
+        opacity: 1;
+      }
+    }
+  }
+  @media only screen and (max-width: 600px) {
+    .button:active {
+      box-shadow: 0px 0px 15px 5px rgba(255, 205, 46, 0.08);
+      h4 {
+        opacity: 1;
+      }
     }
   }
   .button:active {
@@ -251,21 +292,26 @@ const Button = styled(motion.div)`
 // Social Links
 // Grid
 const Social = styled(motion.div)`
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 1.5fr 0.5fr;
-  gap: 0px 0px;
-  grid-template-areas:
-    '. . .'
-    '. . .';
-  margin-left: -2rem;
-  height: 100vh;
-  padding-right: 1000px;
-  a {
-    font-size: 12px;
-    font-weight: 500;
-    letter-spacing: 0.1em;
-    color: #f3f3f3;
+  @media only screen and (min-width: 600px) {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1.5fr 0.5fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      '. . .'
+      '. . .';
+    margin-left: -2rem;
+    height: 100vh;
+    padding-right: 1000px;
+    a {
+      font-size: 12px;
+      font-weight: 500;
+      letter-spacing: 0.1em;
+      color: #f3f3f3;
+    }
+  }
+  @media only screen and (max-width: 600px) {
+    display: none;
   }
 `;
 
