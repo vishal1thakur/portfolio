@@ -11,7 +11,7 @@ const GlobalStylesCP = createGlobalStyle`
 body{
  
   color: white;
-  margin-left: 100px;
+  margin-left: 6.5rem;
 }
 
 `;
