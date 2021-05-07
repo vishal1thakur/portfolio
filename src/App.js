@@ -3,7 +3,7 @@ import {} from 'react-router-dom';
 //Apps
 import HymnApp from './projects/HYMN/HymnApp';
 import GameTownApp from './projects/GameTown/GameTownApp';
-import StripeApp from './projects/Stripe/StripeApp';
+import CinePhileApp from './projects/CinePhile/CinePhileApp';
 import OBS from './projects/OBS Visualizer/OBS';
 import RCO from './projects/Smart RCO/RCO';
 import Nomos from './projects/Nomos/Nomos';
@@ -60,8 +60,8 @@ function App() {
           <Route path="/work/react/gametown">
             <GameTownApp />
           </Route>
-          <Route path="/work/react/stripe">
-            <StripeApp />
+          <Route path="/work/react/cinephile">
+            <CinePhileApp />
           </Route>
           <Route path="/work/ux/obs">
             <OBS />

@@ -200,9 +200,9 @@ const About = () => {
                 </div>
               </div>
             </SkillBar>
-            <SkillBar className="design skills">
+            <SkillBar className="code skills">
               {/* HTML */}
-              <div className="skill-bar code">
+              <div className="skill-bar">
                 <div className="skill-container">
                   <div className="skill-name">
                     <h3>HTML</h3>
@@ -337,7 +337,7 @@ const AllAbout = styled(motion.div)`
 const Header = styled(motion.div)`
   margin-left: 100px;
   height: 100px;
-  width: 60rem;
+  width: 65%;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -365,12 +365,16 @@ const Header = styled(motion.div)`
     width: 100%;
     opacity: 0.4;
   }
+  @media only screen and (max-width: 600px) {
+    margin-left: 0px;
+    width: 90%;
+  }
 `;
 
 const StyledAbout = styled(motion.div)`
   margin-left: 100px;
   height: 120vh;
-  width: 60rem;
+  width: 65%;
   /* background: white; */
 
   display: grid;
@@ -384,6 +388,12 @@ const StyledAbout = styled(motion.div)`
   background-position: 50% 25%;
   background-size: cover;
   background-size: 50%;
+
+  @media only screen and (max-width: 600px) {
+    margin-left: 0px;
+    background-image: none;
+    width: 100%;
+  }
 `;
 
 const Tenets = styled(motion.div)`
@@ -420,6 +430,19 @@ const Tenets = styled(motion.div)`
       }
     }
   }
+
+  @media only screen and (max-width: 600px) {
+    .priority {
+      flex-direction: column;
+      .priority-card {
+        width: 100%;
+        padding-top: 1rem;
+        img {
+          width: 40%;
+        }
+      }
+    }
+  }
 `;
 
 const Skills = styled(motion.div)`
@@ -428,6 +451,12 @@ const Skills = styled(motion.div)`
     font-size: 15px;
     color: rgba(99, 101, 102, 0.5);
     font-weight: 500;
+  }
+  @media only screen and (max-width: 600px) {
+    padding-top: 5rem;
+    .skills-heading {
+      padding-bottom: 1rem;
+    }
   }
 `;
 
@@ -439,6 +468,11 @@ const Tools = styled(motion.div)`
   justify-content: top;
   text-align: top;
   align-items: top;
+  @media only screen and (max-width: 600px) {
+    flex-direction: column;
+    padding: 0rem 2rem;
+    margin-top: 1rem;
+  } ;
 `;
 
 const SkillBar = styled(motion.div)`
@@ -520,6 +554,18 @@ const SkillBar = styled(motion.div)`
       }
     }
   }
+  @media only screen and (max-width: 600px) {
+    height: 100%;
+    width: 100%;
+    grid-gap: 1.5rem;
+    margin-top: 1.5rem;
+    .design {
+      margin-right: 0px;
+    }
+    .code {
+      margin-left: 0px;
+    }
+  }
 `;
 
 const AboutMe = styled(motion.div)`
@@ -594,6 +640,19 @@ const AboutMe = styled(motion.div)`
       }
     }
   }
+  @media only screen and (max-width: 600px) {
+    flex-direction: column;
+    margin-top: 7rem;
+    padding: 0rem 3rem;
+
+    .text {
+      width: 100%;
+    }
+    .links {
+      width: 100%;
+    }
+    padding-bottom: 3rem;
+  }
 `;
 
 const Footer = styled(motion.div)`
@@ -613,5 +672,9 @@ const Footer = styled(motion.div)`
     font-size: 12px;
     opacity: 0.6;
     color: #636566;
+  }
+
+  @media only screen and (max-width: 600px) {
+    display: none;
   }
 `;

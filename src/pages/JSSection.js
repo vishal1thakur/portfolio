@@ -74,6 +74,10 @@ const Header = styled(motion.div)`
     width: 100%;
     opacity: 0.4;
   }
+  @media only screen and (max-width: 600px) {
+    margin-left: 0px;
+    width: 90%;
+  }
 `;
 
 const Projects = styled(motion.div)`
@@ -86,6 +90,12 @@ const Projects = styled(motion.div)`
   column-gap: 4rem;
   grid-template-columns: repeat(1, 1fr);
   grid-template-rows: repeat(3, 1fr);
+
+  @media only screen and (max-width: 600px) {
+    width: 95%;
+    margin-left: 0px;
+    margin-bottom: 7rem;
+  }
 `;
 
 export default AllWork;

@@ -47,7 +47,7 @@ const Work = styled(motion.div)`
 const Header = styled(motion.div)`
   margin-left: 100px;
   height: 100px;
-  width: 60rem;
+  width: 65%;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -75,12 +75,17 @@ const Header = styled(motion.div)`
     width: 100%;
     opacity: 0.4;
   }
+
+  @media only screen and (max-width: 600px) {
+    margin-left: 0px;
+    width: 90%;
+  }
 `;
 
 const Projects = styled(motion.div)`
   margin-top: 0.5rem;
   margin-left: 100px;
-  width: 45rem;
+  width: 40%;
   height: 120vh;
   display: grid;
   justify-content: center;
@@ -90,6 +95,12 @@ const Projects = styled(motion.div)`
   column-gap: 4rem;
   grid-template-columns: repeat(1, 1fr);
   grid-template-rows: repeat(3, 1fr);
+
+  @media only screen and (max-width: 600px) {
+    width: 95%;
+    margin-left: 0px;
+    margin-bottom: 7rem;
+  }
 `;
 
 export default AllWork;

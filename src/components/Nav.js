@@ -68,7 +68,7 @@ const Nav = () => {
 const StyledNav = styled(motion.div)`
   background-color: #2a2e35;
 
-  z-index: 1;
+  z-index: 10;
   left: 0;
   position: fixed;
   overflow: hidden;

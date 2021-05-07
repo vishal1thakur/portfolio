@@ -39,20 +39,22 @@ const StyledSeparateProject = styled(motion.div)`
   justify-content: center;
   align-items: center;
   text-align: center;
-
+  position: relative;
   height: 90%;
   width: 100%;
 
-  position: relative;
   .grey-bg,
   .content-bg {
     position: absolute;
     top: 0;
     left: 0;
-    width: 95%;
+    width: 100%;
     height: 95%;
     background: none;
     border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .grey-bg {
     top: 15px;
@@ -141,6 +143,31 @@ const StyledSeparateProject = styled(motion.div)`
         }
       }
     }
+  }
+
+  @media only screen and (max-width: 600px) {
+    flex-direction: row;
+
+    .content-bg {
+      .project {
+        h4 {
+          font-size: 0.9rem;
+        }
+        p {
+          padding: 1.5rem 1rem;
+        }
+        .date {
+          font-size: 0.6rem;
+        }
+        .description {
+          font-size: 0.75rem;
+        }
+        .type-box {
+          width: 84%;
+        }
+      }
+    }
+    overflow: hidden;
   }
 `;
 

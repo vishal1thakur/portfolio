@@ -45,7 +45,7 @@ const StyledProject = styled(motion.div)`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
+  z-index: 1;
   height: 90%;
   width: 100%;
 

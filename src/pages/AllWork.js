@@ -34,12 +34,15 @@ const Work = styled(motion.div)`
   justify-content: center;
   text-align: center;
   align-items: center;
+  z-index: 2;
+  @media only screen and (min-width: 600px) {
+  }
 `;
 
 const Header = styled(motion.div)`
   margin-left: 100px;
   height: 100px;
-  width: 60rem;
+  width: 65%;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -67,18 +70,27 @@ const Header = styled(motion.div)`
     width: 100%;
     opacity: 0.4;
   }
+  @media only screen and (max-width: 600px) {
+    width: 90%;
+    margin-left: 0px;
+  }
 `;
 
 const Projects = styled(motion.div)`
   margin-top: 0.5rem;
   margin-left: 100px;
-  width: 58rem;
+  width: 65%;
   height: 120vh;
   z-index: 3;
   display: grid;
   row-gap: 1rem;
   column-gap: 4rem;
   grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  @media only screen and (max-width: 600px) {
+    margin-left: 0px;
+    height: 400vh;
+    margin-bottom: 6rem;
+  }
 `;
 
 export default AllWork;

@@ -1,7 +1,7 @@
 import React from 'react';
 import {createGlobalStyle} from 'styled-components';
 
-const GlobalStylesSL = createGlobalStyle`
+const GlobalStylesCP = createGlobalStyle`
 *{
   margin: 0 ;
   padding: 0;
@@ -9,9 +9,11 @@ const GlobalStylesSL = createGlobalStyle`
 }
 
 body{
-  background: #FAFAFB;
+ 
+  color: white;
+  margin-left: 100px;
 }
 
 `;
 
-export default GlobalStylesSL;
+export default GlobalStylesCP;

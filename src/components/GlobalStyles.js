@@ -5,7 +5,6 @@ const GlobalStyles = createGlobalStyle`
   margin: 0 ;
   padding: 0;
   box-sizing: border-box;
-  
 }
 
 html {
@@ -17,6 +16,12 @@ html {
   }
   &::-webkit-scrollbar-track {
     background: none;
+  }
+
+  @media only screen and (max-width: 600px) {
+    &::-webkit-scrollbar{
+    width: 0.2rem;
+  }
   }
 }
 
