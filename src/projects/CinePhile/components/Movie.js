@@ -3,7 +3,7 @@ import {Img_API} from '../api';
 // Style
 import styled from 'styled-components';
 
-const Movie = ({title, poster_path, overview, vote_average}) => {
+const Movie = ({title, poster_path, overview, vote_average, name}) => {
   return (
     <StyledMovie className="movie">
       <div className="movie-display">
@@ -14,7 +14,7 @@ const Movie = ({title, poster_path, overview, vote_average}) => {
         </div>
       </div>
       <div className="movie-info">
-        <h3>{title}</h3>
+        <h3>{title || name}</h3>
         <span>{vote_average}</span>
       </div>
     </StyledMovie>
@@ -23,29 +23,34 @@ const Movie = ({title, poster_path, overview, vote_average}) => {
 
 const StyledMovie = styled.div`
   width: 15rem;
+
   margin: 2rem;
   overflow: hidden;
+
   .movie-display {
     position: relative;
     overflow: hidden;
     cursor: pointer;
+
     img {
-      max-width: 100%;
+      width: 100%;
       border-radius: 8px 8px 0 0;
     }
     .movie-over {
       position: absolute;
-      top: 0;
-      height: 99%;
+      bottom: 0;
+      left: 0;
+      right: 0;
       display: flex;
       flex-direction: column;
-      justify-content: top;
+      overflow: auto;
+      max-height: 100%;
       text-align: center;
       background: rgba(0, 0, 0, 0.5);
-      backdrop-filter: blur(15px);
-      border-radius: 8px 8px 0 0;
-      transform: translateX(-100%);
-      transition: transform 0.7s ease-in-out;
+      backdrop-filter: blur(10px);
+      /* border-radius: 8px 8px 0 0; */
+      transform: translateY(100%);
+      transition: transform 0.5s ease-in-out;
       h2 {
         color: #ffcd2e;
         margin: 0.7rem;
@@ -54,15 +59,32 @@ const StyledMovie = styled.div`
       p {
         padding: 1rem;
         padding-top: 0;
-        font-size: 0.89rem;
-        overflow: hidden;
+        font-size: 0.9rem;
+        padding-bottom: 1.2rem;
+
         font-weight: 300;
         color: white;
+      }
+
+      &::-webkit-scrollbar {
+        width: 0.05rem;
+      }
+      &::-webkit-scrollbar-thumb {
+        background: #ffcd2e;
+      }
+      &::-webkit-scrollbar-track {
+        background: none;
+      }
+
+      @media only screen and (max-width: 600px) {
+        &::-webkit-scrollbar {
+          width: 0.2rem;
+        }
       }
     }
     &:hover {
       .movie-over {
-        transform: translateX(0%);
+        transform: translateY(3%);
       }
     }
   }
@@ -78,6 +100,7 @@ const StyledMovie = styled.div`
       margin: 0;
       font-size: 0.8rem;
       font-weight: 500;
+      color: #efefef;
     }
     span {
       font-size: 0.8rem;

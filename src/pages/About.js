@@ -200,9 +200,9 @@ const About = () => {
                 </div>
               </div>
             </SkillBar>
-            <SkillBar className="code skills">
+            <SkillBar className=" skills">
               {/* HTML */}
-              <div className="skill-bar">
+              <div className="skill-bar code">
                 <div className="skill-container">
                   <div className="skill-name">
                     <h3>HTML</h3>

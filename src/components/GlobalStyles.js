@@ -10,18 +10,22 @@ const GlobalStyles = createGlobalStyle`
 html {
   &::-webkit-scrollbar{
     width: 0.5rem;
+
   }
   &::-webkit-scrollbar-thumb{
     background: #FFCD2E;
+
   }
   &::-webkit-scrollbar-track {
     background: none;
+
   }
 
   @media only screen and (max-width: 600px) {
     &::-webkit-scrollbar{
     width: 0.2rem;
-  }
+    }
+    
   }
 }
 
