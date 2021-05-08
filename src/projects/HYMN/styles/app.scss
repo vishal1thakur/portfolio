@@ -9,12 +9,27 @@
 body {
   font-family: 'Montserrat', sans-serif;
   background-color: rgb(27, 27, 27);
+  @media only screen and (max-width: 600px) {
+    margin-bottom: 5rem;
+  }
 }
 .App {
   transition: all 0.5s ease;
 }
 .library-active {
   margin-left: 20%;
+}
+
+@media only screen and (max-width: 600px) {
+  .library-active {
+    margin-left: 20%;
+    .song-container {
+      display: none;
+    }
+    .player {
+      display: none;
+    }
+  }
 }
 
 h1 {

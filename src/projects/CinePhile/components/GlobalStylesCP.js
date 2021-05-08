@@ -12,6 +12,9 @@ body{
  
   color: white;
   margin-left: 6.5rem;
+  @media only screen and (max-width: 600px){
+    margin-left: 0;
+  }
 }
 
 `;

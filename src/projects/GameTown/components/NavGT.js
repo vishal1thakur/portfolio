@@ -72,6 +72,26 @@ const StyledNav = styled(motion.div)`
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
   }
+  @media only screen and (max-width: 600px) {
+    flex-direction: column;
+    .searchGT {
+      margin-top: 2rem;
+      margin-right: 0rem;
+      width: 80%;
+    }
+    .inputGT {
+      width: 60%;
+      font-size: 0.8rem;
+      padding: 0.4rem;
+      border: none;
+      border-radius: 5px 0px 0px 5px;
+      box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.2);
+    }
+    .buttonGT {
+      font-size: 0.8rem;
+      padding: 0.4rem 1rem;
+    }
+  }
 `;
 const Logo = styled(motion.div)`
   cursor: pointer;
@@ -79,6 +99,12 @@ const Logo = styled(motion.div)`
     width: 18rem;
     margin-left: 6rem;
     opacity: 0.8;
+  }
+  @media only screen and (max-width: 600px) {
+    img {
+      margin-top: 1rem;
+      margin-left: 0;
+    }
   }
 `;
 

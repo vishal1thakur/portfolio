@@ -24,6 +24,12 @@ html {
 body {
   width: 100%;
   background: #D8D8D8;
+  margin-left: 6.5rem;
+
+  @media only screen and (max-width: 600px){
+  margin-left: 0;
+
+  }
 }
 h2{
   font-size: 3rem;

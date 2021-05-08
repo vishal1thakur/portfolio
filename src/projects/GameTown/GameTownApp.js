@@ -11,7 +11,7 @@ import {motion} from 'framer-motion';
 
 function GameTownApp() {
   return (
-    <motion.div className="App" style={{marginLeft: '100px'}}>
+    <motion.div className="App">
       <GlobalStyles />
       <Nav />
       <Route path={['/work/react/gametown/game/:id', '/work/react/gametown']}>

@@ -1,10 +1,11 @@
-import React, {useEffect} from 'react';
+import React, {useEffect, useState} from 'react';
 import GameDetail from '../components/GameDetail';
 //Redux
 import {useDispatch, useSelector} from 'react-redux';
 import {loadGames} from '../actions/gamesAction';
 //Components
 import Game from '../components/Game';
+import Spinner from '../components/Spinner';
 //Styling and Animation
 import styled from 'styled-components';
 import {motion, AnimatePresence, AnimateSharedLayout} from 'framer-motion';
@@ -22,9 +23,13 @@ const Home = () => {
     dispatch(loadGames());
   }, [dispatch]);
   //Get that data back
+
   const {popular, newGames, upcoming, searched} = useSelector(
     (state) => state.games
   );
+
+  console.log(popular);
+
   return (
     <GameList>
       {pathId && <GameDetail pathId={pathId} />}
@@ -37,17 +42,21 @@ const Home = () => {
             </h2>
             <div className="line"></div>
           </div>
-          <Games>
-            {searched.map((game) => (
-              <Game
-                name={game.name}
-                released={game.released}
-                id={game.id}
-                image={game.background_image}
-                key={game.id}
-              />
-            ))}
-          </Games>
+          {searched != [] ? (
+            <Games>
+              {searched.map((game) => (
+                <Game
+                  name={game.name}
+                  released={game.released}
+                  id={game.id}
+                  image={game.background_image}
+                  key={game.id}
+                />
+              ))}
+            </Games>
+          ) : (
+            <Spinner />
+          )}
         </div>
       ) : (
         ''
@@ -59,17 +68,25 @@ const Home = () => {
         </h2>
         <div className="line"></div>
       </div>
+
       <Games>
-        {popular.map((game) => (
-          <Game
-            name={game.name}
-            released={game.released}
-            id={game.id}
-            image={game.background_image}
-            key={game.id}
-          />
-        ))}
+        {popular !== [] ? (
+          <Games>
+            {popular.map((game) => (
+              <Game
+                name={game.name}
+                released={game.released}
+                id={game.id}
+                image={game.background_image}
+                key={game.id}
+              />
+            ))}
+          </Games>
+        ) : (
+          <Spinner />
+        )}
       </Games>
+
       <div className="heads">
         <h2>
           <span className="highlight">Hot</span> Releases
@@ -138,6 +155,13 @@ const GameList = styled(motion.div)`
       width: 100%;
       opacity: 0.4;
       padding-bottom: 2rem;
+    }
+  }
+  @media only screen and (max-width: 600px) {
+    .heads {
+      h2 {
+        padding-top: 3rem;
+      }
     }
   }
 `;

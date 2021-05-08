@@ -1,5 +1,6 @@
 import React from 'react';
 import {Img_API} from '../api';
+import unavailable from '../img/unavailable.jpg';
 // Style
 import styled from 'styled-components';
 
@@ -7,10 +8,17 @@ const Movie = ({title, poster_path, overview, vote_average, name}) => {
   return (
     <StyledMovie className="movie">
       <div className="movie-display">
-        <img src={Img_API + poster_path} alt={title} />
+        <img
+          src={Img_API + poster_path}
+          onError={(e) => {
+            e.target.onerror = null;
+            e.target.src = unavailable;
+          }}
+          alt={title}
+        />
         <div className="movie-over">
           <h2>Overview</h2>
-          <p>{overview}</p>
+          <p>{overview || 'No overview available'}</p>
         </div>
       </div>
       <div className="movie-info">
@@ -54,7 +62,7 @@ const StyledMovie = styled.div`
       h2 {
         color: #ffcd2e;
         margin: 0.7rem;
-        font-size: 1.2rem;
+        font-size: 1rem;
       }
       p {
         padding: 1rem;
@@ -109,6 +117,35 @@ const StyledMovie = styled.div`
       padding: 0.4rem;
       background: #2a2e35;
       border-radius: 3px;
+    }
+  }
+
+  @media only screen and (max-width: 600px) {
+    width: 10rem;
+    .movie-info {
+      h3 {
+        font-size: 0.7rem;
+      }
+    }
+    .movie-display {
+      .movie-over {
+        h2 {
+          font-size: 0.8rem;
+        }
+        p {
+          font-size: 0.7rem;
+        }
+      }
+      &:hover {
+        .movie-over {
+          transform: translateY(100%);
+        }
+      }
+      &:active {
+        .movie-over {
+          transform: translateY(3%);
+        }
+      }
     }
   }
 `;

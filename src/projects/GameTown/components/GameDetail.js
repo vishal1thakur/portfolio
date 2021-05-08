@@ -146,7 +146,6 @@ const CardShadow = styled(motion.div)`
 
   .display-container {
     display: flex;
-    flex-direction: row;
     height: 70vh;
     margin-bottom: 2rem;
   }
@@ -162,6 +161,11 @@ const CardShadow = styled(motion.div)`
   &::-webkit-scrollbar-track {
     background: white;
   }
+  @media only screen and (max-width: 600px) {
+    .display-container {
+      flex-direction: column;
+    }
+  }
 `;
 
 const Detail = styled(motion.div)`
@@ -176,6 +180,10 @@ const Detail = styled(motion.div)`
   z-index: 10;
   img {
     width: 100%;
+  }
+  @media only screen and (max-width: 600px) {
+    width: 100%100px;
+    margin: 1rem 0rem;
   }
 `;
 
@@ -234,6 +242,12 @@ const Stats = styled(motion.div)`
       padding-right: 10px;
     }
   }
+  @media only screen and (max-width: 600px) {
+    width: 100%;
+    align-items: left;
+    justify-content: center;
+    text-align: center;
+  }
 `;
 const Info = styled(motion.div)`
   display: flex;
@@ -257,6 +271,10 @@ const Platforms = styled(motion.div)`
   grid-row-gap: 2rem;
   padding-top: 0.8rem;
   padding-right: 6rem;
+  @media only screen and (max-width: 600px) {
+    padding-right: 0rem;
+    place-items: center;
+  }
 `;
 
 const Media = styled(motion.div)`
@@ -267,6 +285,9 @@ const Media = styled(motion.div)`
     height: 100%;
     object-fit: cover;
     border-radius: 5px;
+  }
+  @media only screen and (max-width: 600px) {
+    width: 100%;
   }
 `;
 
@@ -286,6 +307,9 @@ const Description = styled(motion.div)`
     font-size: 0.9rem;
     color: var(--primary-color);
   }
+  @media only screen and (max-width: 600px) {
+    margin: 18rem 0rem 0rem 0rem;
+  }
 `;
 
 const Screenshots = styled(motion.div)`
@@ -298,6 +322,9 @@ const Screenshots = styled(motion.div)`
   }
   .screenshot {
     padding: 1rem 0rem;
+  }
+  @media only screen and (max-width: 600px) {
+    margin: 3rem 0rem 5rem 0rem;
   }
 `;
 

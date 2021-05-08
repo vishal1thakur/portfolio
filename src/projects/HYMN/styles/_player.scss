@@ -5,6 +5,11 @@
   align-items: center;
   justify-content: space-between;
   margin-left: 100px;
+  @media only screen and (max-width: 600px) {
+    margin-left: 0px;
+    min-height: 10vh;
+    justify-content: center;
+  }
 }
 
 .time-control {
@@ -23,6 +28,11 @@
     color: white;
   }
 }
+@media only screen and (max-width: 600px) {
+  .time-control {
+    margin-top: -1.5rem;
+  }
+}
 .play-control {
   display: flex;
   justify-content: space-between;
@@ -34,6 +44,12 @@
     cursor: pointer;
   }
   color: white;
+}
+
+@media only screen and (max-width: 600px) {
+  .play-control {
+    padding: 1.5rem;
+  }
 }
 
 .track {
@@ -53,6 +69,12 @@
   transform: translateX(0%);
   padding: 1rem;
   pointer-events: none;
+}
+
+@media only screen and (max-width: 600px) {
+  .animate-track {
+    padding: 0;
+  }
 }
 
 input[type='range']:focus {

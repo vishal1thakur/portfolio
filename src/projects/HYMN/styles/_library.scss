@@ -13,6 +13,11 @@
   opacity: 0;
   margin-left: 100px;
 
+  @media only screen and (max-width: 600px) {
+    margin-left: 0px;
+    width: 20%;
+  }
+
   h2 {
     padding: 2rem;
     color: white;
@@ -85,8 +90,9 @@
   opacity: 1;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 600px) {
   .library {
-    width: 100%;
+    width: 67%;
+    background: linear-gradient(to right top, var(--meta-color), #181818f5);
   }
 }
