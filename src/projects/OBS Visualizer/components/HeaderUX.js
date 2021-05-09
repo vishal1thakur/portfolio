@@ -39,8 +39,6 @@ const Header = styled.div`
       width: 40%;
       /* background: yellow; */
       padding-right: 4rem;
-      margin-top: auto;
-      margin-bottom: 0;
 
       .main-text {
         font-size: 3rem;
@@ -62,6 +60,30 @@ const Header = styled.div`
       /* background: orange; */
       img {
         width: 100%;
+      }
+    }
+  }
+  @media only screen and (max-width: 600px) {
+    padding-top: 0rem;
+    height: 70vh;
+
+    .container {
+      flex-direction: column;
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+      .text {
+        width: 100%;
+        height: auto;
+        padding: 0 1rem;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+      }
+      .image {
+        width: 80%;
+        padding-top: 3rem;
+        height: auto;
       }
     }
   }

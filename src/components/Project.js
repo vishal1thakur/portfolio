@@ -9,33 +9,63 @@ import {Link} from 'react-router-dom';
 const Project = ({project}) => {
   return (
     <StyledProject>
-      <Link to={project.link}>
-        <div className="grey-bg"></div>
-        <div className="content-bg">
-          <div className="image"></div>
-          <div className="content">
-            <div className="project-name">
-              <h4>{project.name}</h4>
-            </div>
-            <div className="type">
-              <div
-                className="type-box"
-                style={
-                  project.type === 'REACT'
-                    ? {backgroundColor: '#2E75FF'}
-                    : project.type === 'UX / UI'
-                    ? {backgroundColor: '#FF3E3E'}
-                    : project.type === 'JAVASCRIPT'
-                    ? {backgroundColor: 'rgba(255, 205, 46, 0.8)'}
-                    : 'black'
-                }
-              >
-                <h5>{project.type}</h5>
+      {project.link ? (
+        <Link to={project.link}>
+          <div className="grey-bg"></div>
+          <div className="content-bg">
+            <div className="image"></div>
+            <div className="content">
+              <div className="project-name">
+                <h4>{project.name}</h4>
+              </div>
+              <div className="type">
+                <div
+                  className="type-box"
+                  style={
+                    project.type === 'REACT'
+                      ? {backgroundColor: '#2E75FF'}
+                      : project.type === 'UX / UI'
+                      ? {backgroundColor: '#FF3E3E'}
+                      : project.type === 'JAVASCRIPT'
+                      ? {backgroundColor: 'rgba(255, 205, 46, 0.8)'}
+                      : 'black'
+                  }
+                >
+                  <h5>{project.type}</h5>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-      </Link>
+        </Link>
+      ) : (
+        <a href={project.external} target="_blank">
+          <div className="grey-bg"></div>
+          <div className="content-bg">
+            <div className="image"></div>
+            <div className="content">
+              <div className="project-name">
+                <h4>{project.name}</h4>
+              </div>
+              <div className="type">
+                <div
+                  className="type-box"
+                  style={
+                    project.type === 'REACT'
+                      ? {backgroundColor: '#2E75FF'}
+                      : project.type === 'UX / UI'
+                      ? {backgroundColor: '#FF3E3E'}
+                      : project.type === 'JAVASCRIPT'
+                      ? {backgroundColor: 'rgba(255, 205, 46, 0.8)'}
+                      : 'black'
+                  }
+                >
+                  <h5>{project.type}</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </a>
+      )}
     </StyledProject>
   );
 };

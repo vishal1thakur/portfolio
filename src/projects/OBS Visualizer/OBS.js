@@ -40,6 +40,9 @@ const OBSApp = styled.div`
   justify-content: center;
   margin: 0rem 0rem 0rem 6.5rem;
   overflow-x: none;
+  @media only screen and (max-width: 600px) {
+    margin-left: 0rem;
+  }
 `;
 
 export default OBS;

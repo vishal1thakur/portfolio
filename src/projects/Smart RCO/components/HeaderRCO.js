@@ -64,6 +64,31 @@ const Header = styled.div`
       }
     }
   }
+  @media only screen and (max-width: 600px) {
+    padding-top: 0rem;
+    height: 70vh;
+
+    .container {
+      flex-direction: column;
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+      .text {
+        width: 100%;
+        height: auto;
+        padding: 0 1rem;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+      }
+      .image {
+        width: 80%;
+        padding-top: 3rem;
+        height: auto;
+        padding-bottom: 2rem;
+      }
+    }
+  }
 `;
 
 export default HeaderRCO;

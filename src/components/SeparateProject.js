@@ -22,11 +22,19 @@ const SeparateProject = ({project}) => {
               odit unde?
             </p>
           </div>
-          <Link to={project.link}>
-            <div className="type-box">
-              <h5>View Project</h5>
-            </div>
-          </Link>
+          {project.link ? (
+            <Link to={project.link}>
+              <div className="type-box">
+                <h5>View Project</h5>
+              </div>
+            </Link>
+          ) : (
+            <a href={project.external} target="_blank">
+              <div className="type-box">
+                <h5>View Project</h5>
+              </div>
+            </a>
+          )}
         </div>
       </div>
     </StyledSeparateProject>
