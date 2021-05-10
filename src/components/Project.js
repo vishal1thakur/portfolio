@@ -13,7 +13,9 @@ const Project = ({project}) => {
         <Link to={project.link}>
           <div className="grey-bg"></div>
           <div className="content-bg">
-            <div className="image"></div>
+            <div className="image">
+              <img src={project.cover} alt="" />
+            </div>
             <div className="content">
               <div className="project-name">
                 <h4>{project.name}</h4>
@@ -41,7 +43,9 @@ const Project = ({project}) => {
         <a href={project.external} target="_blank">
           <div className="grey-bg"></div>
           <div className="content-bg">
-            <div className="image"></div>
+            <div className="image">
+              <img src={project.cover} alt="" />
+            </div>
             <div className="content">
               <div className="project-name">
                 <h4>{project.name}</h4>
@@ -76,8 +80,10 @@ const StyledProject = styled(motion.div)`
   justify-content: center;
   align-items: center;
   z-index: 1;
-  height: 90%;
-  width: 100%;
+  height: 15rem;
+  width: 18rem;
+  margin: 2rem;
+  margin-bottom: 2rem;
 
   position: relative;
   .grey-bg,
@@ -110,6 +116,14 @@ const StyledProject = styled(motion.div)`
       height: 80%;
       background: #454a52;
       border-radius: 5px;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 5px;
+        image-rendering: high-quality;
+      }
     }
     .content {
       width: 100%;
@@ -131,7 +145,7 @@ const StyledProject = styled(motion.div)`
 
         h4 {
           padding-left: 10px;
-          color: #c5c5c5;
+          color: #f3f3f3;
           font-weight: 500;
         }
       }

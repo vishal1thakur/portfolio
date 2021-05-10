@@ -3,10 +3,10 @@ import {v4 as uuidv4} from 'uuid';
 function projects() {
   return [
     {
-      name: 'HYMN Music App',
+      name: 'HYMN Music',
       type: 'REACT',
       cover:
-        'https://images.unsplash.com/photo-1583119912267-cc97c911e416?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80',
+        'https://docs.google.com/uc?export=download&id=1bvaNbDRqht6Avu3gmtSFIv7qQmuuoelM',
       id: uuidv4(),
       link: '/work/react/hymn',
       date: 'March 2021',
@@ -14,21 +14,22 @@ function projects() {
         'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt, mollitia accusantium. Esse enim praesentium ducimus, voluptatum expedita explicabo neque id.',
     },
     {
-      name: 'OBS Visualizer',
+      name: 'Smart RCO',
       type: 'UX / UI',
       cover:
-        'https://images.unsplash.com/photo-1583119912267-cc97c911e416?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80',
+        'https://docs.google.com/uc?export=download&id=1g8nZcUesMMKujVqzYz0GWqx9-6SufQGB',
       id: uuidv4(),
-      link: '/work/ux/obs',
+      link: '/work/ux/rco',
       date: 'March 2021',
       description:
         'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt, mollitia accusantium. Esse enim praesentium ducimus, voluptatum expedita explicabo neque id.',
     },
+
     {
       name: 'Rangeen',
       type: 'JAVASCRIPT',
       cover:
-        'https://images.unsplash.com/photo-1583119912267-cc97c911e416?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80',
+        'https://docs.google.com/uc?export=download&id=1blffFvN_JaoJ-8k_t8aTP_lSQwGBTEcH',
       id: uuidv4(),
       link: '/about',
       date: 'March 2021',
@@ -39,7 +40,7 @@ function projects() {
       name: 'GameTown',
       type: 'REACT',
       cover:
-        'https://images.unsplash.com/photo-1583119912267-cc97c911e416?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80',
+        'https://docs.google.com/uc?export=download&id=181W3OGXD1EVXairuujRrO9C6MQGvMOuA',
       id: uuidv4(),
       link: '/work/react/gametown',
       date: 'March 2021',
@@ -50,7 +51,7 @@ function projects() {
       name: 'Pictel',
       type: 'JAVASCRIPT',
       cover:
-        'https://images.unsplash.com/photo-1583119912267-cc97c911e416?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80',
+        'https://docs.google.com/uc?export=download&id=1gm2gVmcpFaa2aUm3kJsh4awBUNgtlTjX',
       id: uuidv4(),
       external: 'https://vishalthakur-pictel.netlify.app/',
       date: 'March 2021',
@@ -61,7 +62,7 @@ function projects() {
       name: 'CinePhile',
       type: 'REACT',
       cover:
-        'https://images.unsplash.com/photo-1583119912267-cc97c911e416?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80',
+        'https://docs.google.com/uc?export=download&id=1iIQ0PZ0YnugpB4gB3boIk70Dp6huMmp5',
       id: uuidv4(),
       link: '/work/react/cinephile',
       date: 'March 2021',
@@ -72,7 +73,7 @@ function projects() {
       name: 'Nomos',
       type: 'UX / UI',
       cover:
-        'https://images.unsplash.com/photo-1583119912267-cc97c911e416?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80',
+        'https://docs.google.com/uc?export=download&id=1lsUN3IQPg5GG8yP5l_sqehRKiQ1gCyA1',
       id: uuidv4(),
       link: '/work/ux/nomos',
       date: 'March 2021',
@@ -83,7 +84,7 @@ function projects() {
       name: 'ToDo List',
       type: 'JAVASCRIPT',
       cover:
-        'https://images.unsplash.com/photo-1583119912267-cc97c911e416?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80',
+        'https://docs.google.com/uc?export=download&id=1Y0Ng5ajtIZkrXT_PDRYJFBm8M5nxLB5i',
       id: uuidv4(),
       link: '/work/java_script/todo',
       date: 'March 2021',
@@ -91,12 +92,12 @@ function projects() {
         'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt, mollitia accusantium. Esse enim praesentium ducimus, voluptatum expedita explicabo neque id.',
     },
     {
-      name: 'Smart RCO',
+      name: 'OBS Visualizer',
       type: 'UX / UI',
       cover:
-        'https://images.unsplash.com/photo-1583119912267-cc97c911e416?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80',
+        'https://docs.google.com/uc?export=download&id=1PGfZEZDowyW-Byscbv6o0RVph9V3RW33',
       id: uuidv4(),
-      link: '/work/ux/rco',
+      link: '/work/ux/obs',
       date: 'March 2021',
       description:
         'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt, mollitia accusantium. Esse enim praesentium ducimus, voluptatum expedita explicabo neque id.',

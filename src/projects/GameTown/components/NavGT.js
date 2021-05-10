@@ -48,7 +48,9 @@ const StyledNav = styled(motion.div)`
   justify-content: space-between;
   align-items: center;
   margin-top: 2rem;
-  width: 100%;
+  width: 90%;
+  overflow-x: none;
+
   .searchGT {
     margin-right: 3rem;
     width: 40%;

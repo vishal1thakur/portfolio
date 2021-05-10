@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import styled from 'styled-components';
 import logo from '../img/logo.PNG';
-import info from '../img/info.png';
+import info from '../img/info.svg';
 import Search from '../components/Search';
 import {POPULAR_ALL_API, TV_API, MOVIE_API} from '../api';
 

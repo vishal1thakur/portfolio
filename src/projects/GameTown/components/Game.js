@@ -36,6 +36,8 @@ const Game = ({name, released, image, id}) => {
 };
 
 const StyledGame = styled(motion.div)`
+  overflow-x: none;
+
   min-height: 30vh;
   box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.2);
   display: flex;

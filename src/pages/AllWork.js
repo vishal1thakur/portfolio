@@ -79,17 +79,21 @@ const Header = styled(motion.div)`
 const Projects = styled(motion.div)`
   margin-top: 0.5rem;
   margin-left: 100px;
-  width: 65%;
+  width: 80%;
   height: 120vh;
   z-index: 3;
-  display: grid;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 5rem;
+  /* display: grid;
   row-gap: 1rem;
   column-gap: 4rem;
-  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); */
   @media only screen and (max-width: 600px) {
     margin-left: 0px;
-    height: 400vh;
-    margin-bottom: 6rem;
+
+    margin-bottom: 110rem;
   }
 `;
 

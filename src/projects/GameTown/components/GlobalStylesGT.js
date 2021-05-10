@@ -26,6 +26,9 @@ body {
   background: #D8D8D8;
   margin-left: 6.5rem;
 
+  overflow-x: hidden;
+  overflow-y: auto;
+
   @media only screen and (max-width: 600px){
   margin-left: 0;
 
