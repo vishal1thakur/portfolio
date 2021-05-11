@@ -29,7 +29,7 @@ const Project = ({project}) => {
                       : project.type === 'UX / UI'
                       ? {backgroundColor: '#FF3E3E'}
                       : project.type === 'JAVASCRIPT'
-                      ? {backgroundColor: 'rgba(255, 205, 46, 0.8)'}
+                      ? {backgroundColor: 'rgba(255, 205, 46, 1)'}
                       : 'black'
                   }
                 >
@@ -59,7 +59,7 @@ const Project = ({project}) => {
                       : project.type === 'UX / UI'
                       ? {backgroundColor: '#FF3E3E'}
                       : project.type === 'JAVASCRIPT'
-                      ? {backgroundColor: 'rgba(255, 205, 46, 0.8)'}
+                      ? {backgroundColor: 'rgba(255, 205, 46, 1)'}
                       : 'black'
                   }
                 >
@@ -99,8 +99,10 @@ const StyledProject = styled(motion.div)`
   .grey-bg {
     top: 15px;
     left: 0;
-    background: #2a2e35;
+    background: none;
+    /* background: #2a2e35; */
     border-radius: 5px 5px 5px 5px;
+    border: 0.5px solid rgba(255, 205, 46, 0.4);
   }
   .content-bg {
     top: 0;

@@ -54,6 +54,7 @@ const StyledNav = styled(motion.div)`
   .searchGT {
     margin-right: 3rem;
     width: 40%;
+    display: flex;
   }
   .inputGT {
     width: 60%;
@@ -73,6 +74,7 @@ const StyledNav = styled(motion.div)`
     color: white;
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.4);
   }
   @media only screen and (max-width: 600px) {
     flex-direction: column;

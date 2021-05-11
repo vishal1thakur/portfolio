@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 // Components
+
 import SeparateProject from '../components/SeparateProject';
 // Style
 import styled from 'styled-components';
@@ -46,7 +47,7 @@ const Work = styled(motion.div)`
 const Header = styled(motion.div)`
   margin-left: 100px;
   height: 100px;
-  width: 60rem;
+  width: 65%;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -74,6 +75,7 @@ const Header = styled(motion.div)`
     width: 100%;
     opacity: 0.4;
   }
+
   @media only screen and (max-width: 600px) {
     margin-left: 0px;
     width: 90%;
@@ -81,12 +83,16 @@ const Header = styled(motion.div)`
 `;
 
 const Projects = styled(motion.div)`
-  margin-top: 0.5rem;
+  margin-top: 2rem;
+  margin-bottom: 4rem;
   margin-left: 100px;
-  width: 45rem;
-  height: 120vh;
+  width: 55%;
+  height: 160vh;
   display: grid;
-  row-gap: 1rem;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  row-gap: 4rem;
   column-gap: 4rem;
   grid-template-columns: repeat(1, 1fr);
   grid-template-rows: repeat(3, 1fr);

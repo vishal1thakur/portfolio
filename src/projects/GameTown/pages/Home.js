@@ -126,9 +126,8 @@ const Home = () => {
 };
 
 const GameList = styled(motion.div)`
-  padding: 0rem 6rem;
   width: 90%;
-  overflow: none;
+  padding: 0rem 4.5rem 0rem 6.5rem;
   .heads {
     display: flex;
     flex-direction: column;

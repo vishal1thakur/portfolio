@@ -83,15 +83,16 @@ const Header = styled(motion.div)`
 `;
 
 const Projects = styled(motion.div)`
-  margin-top: 0.5rem;
+  margin-top: 2rem;
+  margin-bottom: 4rem;
   margin-left: 100px;
-  width: 40%;
-  height: 120vh;
+  width: 55%;
+  height: 160vh;
   display: grid;
   justify-content: center;
   text-align: center;
   align-items: center;
-  row-gap: 1rem;
+  row-gap: 4rem;
   column-gap: 4rem;
   grid-template-columns: repeat(1, 1fr);
   grid-template-rows: repeat(3, 1fr);

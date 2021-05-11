@@ -12,6 +12,8 @@ function projects() {
       date: 'March 2021',
       description:
         'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt, mollitia accusantium. Esse enim praesentium ducimus, voluptatum expedita explicabo neque id.',
+      big:
+        'https://docs.google.com/uc?export=download&id=1OaJc_KQqLvhPS5NL4V_X9CsZOK7nU5VP',
     },
     {
       name: 'Smart RCO',
@@ -31,8 +33,8 @@ function projects() {
       cover:
         'https://docs.google.com/uc?export=download&id=1blffFvN_JaoJ-8k_t8aTP_lSQwGBTEcH',
       id: uuidv4(),
-      link: '/about',
       date: 'March 2021',
+      external: 'https://vishalthakur-rangeen.netlify.app/',
       description:
         'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt, mollitia accusantium. Esse enim praesentium ducimus, voluptatum expedita explicabo neque id.',
     },
@@ -46,6 +48,8 @@ function projects() {
       date: 'March 2021',
       description:
         'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt, mollitia accusantium. Esse enim praesentium ducimus, voluptatum expedita explicabo neque id.',
+      big:
+        'https://docs.google.com/uc?export=download&id=1vF89tqibdhQk_HshhdNKLwmyTSrJlLbS',
     },
     {
       name: 'Pictel',
@@ -68,6 +72,8 @@ function projects() {
       date: 'March 2021',
       description:
         'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt, mollitia accusantium. Esse enim praesentium ducimus, voluptatum expedita explicabo neque id.',
+      big:
+        'https://docs.google.com/uc?export=download&id=1QR8Ie-uuaiM5f86ooDb8kbsY3qLk3NMD',
     },
     {
       name: 'Nomos',
@@ -86,7 +92,7 @@ function projects() {
       cover:
         'https://docs.google.com/uc?export=download&id=1Y0Ng5ajtIZkrXT_PDRYJFBm8M5nxLB5i',
       id: uuidv4(),
-      link: '/work/java_script/todo',
+      external: 'https://vishalthakur-todo.netlify.app/',
       date: 'March 2021',
       description:
         'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt, mollitia accusantium. Esse enim praesentium ducimus, voluptatum expedita explicabo neque id.',
