@@ -47,7 +47,7 @@ const StyledNav = styled(motion.div)`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 2rem;
+  padding-top: 2rem;
   width: 90%;
   overflow-x: none;
 

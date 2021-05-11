@@ -23,7 +23,7 @@ html {
 }
 body {
   width: 100%;
-  background: #D8D8D8;
+  /* background: #D8D8D8; */
   margin-left: 6.5rem;
 
   overflow-x: hidden;

@@ -9,6 +9,9 @@ import Nav from './components/Nav';
 import chillhop from './data';
 //Util
 import {playAudio} from './util';
+// Animation
+import {motion, AnimatePresence} from 'framer-motion';
+import {pageAnimation} from '../Animation';
 
 function HymnApp() {
   //Ref
@@ -47,7 +50,11 @@ function HymnApp() {
     return;
   };
   return (
-    <div
+    <motion.div
+      variants={pageAnimation}
+      initial="hidden"
+      animate="show"
+      exit="exit"
       style={{overflow: 'hidden'}}
       className={`App ${libraryStatus ? 'library-active' : ''}`}
     >
@@ -79,7 +86,7 @@ function HymnApp() {
         src={currentSong.audio}
         onEnded={songEndHandler}
       ></audio>
-    </div>
+    </motion.div>
   );
 }
 

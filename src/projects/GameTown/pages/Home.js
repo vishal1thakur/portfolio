@@ -10,7 +10,7 @@ import Spinner from '../components/Spinner';
 import styled from 'styled-components';
 import {motion, AnimatePresence, AnimateSharedLayout} from 'framer-motion';
 import {useLocation} from 'react-router-dom';
-import {fadeIn} from '../animations';
+import {pageAnimation} from '../animations';
 
 const Home = () => {
   //get the current location

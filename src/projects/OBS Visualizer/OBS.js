@@ -14,10 +14,20 @@ import Check1 from './components/Check1';
 import Make2 from './components/Make2';
 import Check2 from './components/Check2';
 import Make3 from './components/Make3';
+// Animation
+import {motion} from 'framer-motion';
+import {pageAnimation, cardAnim} from '../Animation';
 
 const OBS = () => {
   return (
-    <OBSApp className="SLApp">
+    <OBSApp
+      variants={pageAnimation}
+      initial="hidden"
+      animate="show"
+      exit="exit"
+      style={{backgroundColor: '#FDFDFD'}}
+      className="SLApp"
+    >
       <GlobalStylesOBS />
       <HeaderUX />
       <ProjectBackground />
@@ -34,7 +44,7 @@ const OBS = () => {
   );
 };
 
-const OBSApp = styled.div`
+const OBSApp = styled(motion.div)`
   display: flex;
   flex-direction: column;
   justify-content: center;

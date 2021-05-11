@@ -57,7 +57,7 @@ const Home = () => {
         <motion.hr variants={fade}></motion.hr>
         <motion.p variants={fade} className="copyright">
           &#169; 2021 Vishal Thakur : website crafted in React, deployed on
-          Netlify
+          Firebase
         </motion.p>
       </Banner>
 
@@ -405,11 +405,13 @@ const SocialCard = styled(motion.Link)`
   .resume {
     border: 2px dotted rgba(255, 205, 46, 0.6);
     position: relative;
+    border-bottom: none;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
     transition: background-color 0.5s ease-in-out;
+    cursor: default;
     .resume-name {
       position: absolute;
       bottom: 1rem;
@@ -421,11 +423,14 @@ const SocialCard = styled(motion.Link)`
     }
     :hover {
       background: rgba(255, 205, 46, 0.8);
+      cursor: pointer;
       .resume-name {
         opacity: 1;
+        cursor: pointer;
       }
       .social-image {
         opacity: 1;
+        cursor: pointer;
       }
     }
   }

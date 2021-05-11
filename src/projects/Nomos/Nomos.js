@@ -11,10 +11,20 @@ import Process from './components/Process';
 import Discover from './components/Discover';
 import Define from './components/Define';
 import Design from './components/Design';
+// Animation
+import {motion} from 'framer-motion';
+import {pageAnimation, cardAnim} from '../Animation';
 
 const Nomos = () => {
   return (
-    <OBSApp className="SLApp">
+    <OBSApp
+      variants={pageAnimation}
+      initial="hidden"
+      animate="show"
+      exit="exit"
+      style={{backgroundColor: '#FDFDFD'}}
+      className="SLApp"
+    >
       <GlobalStylesNomos />
       <HeaderNomos />
       <ProjectBackground />
@@ -28,7 +38,7 @@ const Nomos = () => {
   );
 };
 
-const OBSApp = styled.div`
+const OBSApp = styled(motion.div)`
   display: flex;
   flex-direction: column;
   justify-content: center;

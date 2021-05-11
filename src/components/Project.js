@@ -14,7 +14,7 @@ const Project = ({project}) => {
           <div className="grey-bg"></div>
           <div className="content-bg">
             <div className="image">
-              <img src={project.cover} alt="" />
+              <img src={project.big} alt="" />
             </div>
             <div className="content">
               <div className="project-name">

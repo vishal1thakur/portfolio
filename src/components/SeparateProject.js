@@ -72,7 +72,7 @@ const StyledSeparateProject = styled(motion.div)`
       width: 100%;
       height: 95%;
       background: none;
-      border-radius: 5px;
+      border-radius: 10px;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -83,7 +83,7 @@ const StyledSeparateProject = styled(motion.div)`
       left: 0;
       background: none;
       /* background: #2a2e35; */
-      border-radius: 5px 5px 8px 5px;
+      border-radius: 10px 10px 8px 10px;
       border: 0.5px solid rgba(255, 205, 46, 0.4);
     }
     .content-bg {
@@ -96,23 +96,25 @@ const StyledSeparateProject = styled(motion.div)`
       justify-content: center;
       align-items: center;
       text-align: center;
-      background: white;
+      /* background: #12181b; */
 
       .image-bg {
         width: 100%;
         height: 100%;
-        background: #454a52;
+        background: #12181b;
         display: flex;
         justify-content: center;
         align-items: center;
         text-align: center;
-        border-radius: 5px;
+        border-radius: 10px;
+
         position: relative;
         img {
           width: 100%;
           height: 100%;
           object-fit: cover;
-          border-radius: 5px;
+          border-radius: 10px;
+
           image-rendering: high-quality;
         }
       }
@@ -129,7 +131,7 @@ const StyledSeparateProject = styled(motion.div)`
       position: relative;
       top: auto;
 
-      height: 85%;
+      height: 87%;
       padding-right: 5rem;
 
       .container {
@@ -147,7 +149,7 @@ const StyledSeparateProject = styled(motion.div)`
         h4 {
           color: #f3f3f3;
           font-weight: 500;
-          font-size: 1.6rem;
+          font-size: 1.4rem;
 
           margin-top: auto;
           letter-spacing: 0.05rem;
@@ -171,7 +173,8 @@ const StyledSeparateProject = styled(motion.div)`
     }
 
     .button {
-      height: 15%;
+      height: 13%;
+      transition: 1s all ease-in;
       .type-box {
         background: transparent;
         border: 0.5px solid rgba(255, 205, 46, 0.4);
@@ -189,9 +192,19 @@ const StyledSeparateProject = styled(motion.div)`
         h5 {
           color: #ffcd2e;
           /* color: #2a2e35; */
-          font-size: 0.8rem;
-          font-weight: 400;
-          letter-spacing: 0.3rem;
+          font-size: 0.7rem;
+          font-weight: 600;
+          letter-spacing: 0.1rem;
+        }
+      }
+      &:active {
+        .type-box {
+          background: rgba(255, 205, 46, 1);
+          border: none;
+        }
+        h5 {
+          color: #2a2e35;
+          font-weight: 600;
         }
       }
     }

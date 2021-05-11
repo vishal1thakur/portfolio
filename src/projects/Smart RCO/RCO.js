@@ -10,10 +10,19 @@ import ProjectDetails from './components/ProjectDetails';
 import Process from './components/Process';
 import DiscoverDefine from './components/DiscoverDefine';
 import DesignDeliver from './components/DesignDeliver';
+// Animation
+import {motion} from 'framer-motion';
+import {pageAnimation, cardAnim} from '../Animation';
 
 const RCO = () => {
   return (
-    <RCOApp>
+    <RCOApp
+      variants={pageAnimation}
+      initial="hidden"
+      animate="show"
+      exit="exit"
+      style={{backgroundColor: '#FDFDFD'}}
+    >
       <GlobalStylesRCO />
       <HeaderRCO />
       <ProjectBackground />
@@ -26,7 +35,7 @@ const RCO = () => {
   );
 };
 
-const RCOApp = styled.div`
+const RCOApp = styled(motion.div)`
   display: flex;
   flex-direction: column;
   justify-content: center;

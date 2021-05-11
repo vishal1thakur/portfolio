@@ -8,6 +8,7 @@ export const pageAnimation = {
     y: 0,
     transition: {
       duration: 1,
+      ease: 'easeIn',
     },
   },
   exit: {
@@ -15,6 +16,7 @@ export const pageAnimation = {
     y: 300,
     transition: {
       duration: 1,
+      ease: 'easeIn',
     },
   },
 };

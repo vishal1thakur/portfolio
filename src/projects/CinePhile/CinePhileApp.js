@@ -6,6 +6,9 @@ import NoResult from './components/NoResult';
 import Nav from './components/Nav';
 import Spinner from './components/Spinner';
 import {POPULAR_ALL_API, Img_API, SEARCH_API} from './api';
+// Animation
+import {motion, AnimatePresence} from 'framer-motion';
+import {pageAnimation} from '../Animation';
 
 const CinePhileApp = () => {
   // All popular state
@@ -22,7 +25,13 @@ const CinePhileApp = () => {
   }, []);
 
   return (
-    <div className="SLApp">
+    <motion.div
+      variants={pageAnimation}
+      initial="hidden"
+      animate="show"
+      exit="exit"
+      className="SLApp"
+    >
       <GlobalStylesCP />
       <Nav
         contents={contents}
@@ -36,7 +45,7 @@ const CinePhileApp = () => {
       ) : (
         <AllPopular contents={contents} setLoading={setLoading} />
       )}
-    </div>
+    </motion.div>
   );
 };
 

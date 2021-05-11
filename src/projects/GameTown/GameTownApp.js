@@ -7,13 +7,20 @@ import GlobalStyles from './components/GlobalStylesGT';
 //Router
 import {Route} from 'react-router-dom';
 // Animation
-import {motion} from 'framer-motion';
+import {motion, AnimatePresence} from 'framer-motion';
+import {pageAnimation} from '../Animation';
 
 function GameTownApp() {
   return (
-    <motion.div className="App">
+    <motion.div
+      variants={pageAnimation}
+      initial="hidden"
+      animate="show"
+      exit="exit"
+      style={{backgroundColor: '#FDFDFD'}}
+    >
       <GlobalStyles />
-      <Nav />
+      <Nav style={{marginTop: '2rem'}} />
       <Route path={['/work/react/gametown/game/:id', '/work/react/gametown']}>
         <Home />
       </Route>
