@@ -10,6 +10,8 @@ import ProjectDetails from './components/ProjectDetails';
 import Process from './components/Process';
 import DiscoverDefine from './components/DiscoverDefine';
 import DesignDeliver from './components/DesignDeliver';
+import ScrollToTop from '../ScrollToTop';
+
 // Animation
 import {motion} from 'framer-motion';
 import {pageAnimation, cardAnim} from '../Animation';
@@ -23,6 +25,8 @@ const RCO = () => {
       exit="exit"
       style={{backgroundColor: '#FDFDFD'}}
     >
+      <ScrollToTop />
+
       <GlobalStylesRCO />
       <HeaderRCO />
       <ProjectBackground />

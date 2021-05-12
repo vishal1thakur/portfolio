@@ -5,6 +5,8 @@ import AllPopular from './components/AllPopular';
 import NoResult from './components/NoResult';
 import Nav from './components/Nav';
 import Spinner from './components/Spinner';
+import ScrollToTop from '../ScrollToTop';
+
 import {POPULAR_ALL_API, Img_API, SEARCH_API} from './api';
 // Animation
 import {motion, AnimatePresence} from 'framer-motion';
@@ -26,12 +28,14 @@ const CinePhileApp = () => {
 
   return (
     <motion.div
-      variants={pageAnimation}
-      initial="hidden"
-      animate="show"
-      exit="exit"
+      // variants={pageAnimation}
+      // initial="hidden"
+      // animate="show"
+      // exit="exit"
       className="SLApp"
     >
+      <ScrollToTop />
+
       <GlobalStylesCP />
       <Nav
         contents={contents}

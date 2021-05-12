@@ -51,10 +51,10 @@ function HymnApp() {
   };
   return (
     <motion.div
-      variants={pageAnimation}
-      initial="hidden"
-      animate="show"
-      exit="exit"
+      // variants={pageAnimation}
+      // initial="hidden"
+      // animate="show"
+      // exit="exit"
       style={{overflow: 'hidden'}}
       className={`App ${libraryStatus ? 'library-active' : ''}`}
     >

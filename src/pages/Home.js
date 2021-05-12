@@ -12,6 +12,7 @@ import {motion} from 'framer-motion';
 import {pageAnimationHome, titleAnim, fade} from '../Animation';
 // Routing
 import {Link} from 'react-router-dom';
+import ScrollToTop from '../components/ScrollToTop';
 
 // ------------ 2) JSX ------------------
 
@@ -24,6 +25,7 @@ const Home = () => {
       animate="show"
     >
       {/* Main text content of the page */}
+      <ScrollToTop />
       <Banner>
         {/* Greeting */}
         <motion.h3 variants={titleAnim}>HI THERE &#128075;, I'M</motion.h3>

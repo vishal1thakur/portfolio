@@ -11,6 +11,8 @@ import Process from './components/Process';
 import Discover from './components/Discover';
 import Define from './components/Define';
 import Design from './components/Design';
+import ScrollToTop from '../ScrollToTop';
+
 // Animation
 import {motion} from 'framer-motion';
 import {pageAnimation, cardAnim} from '../Animation';
@@ -25,6 +27,8 @@ const Nomos = () => {
       style={{backgroundColor: '#FDFDFD'}}
       className="SLApp"
     >
+      <ScrollToTop />
+
       <GlobalStylesNomos />
       <HeaderNomos />
       <ProjectBackground />

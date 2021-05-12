@@ -10,6 +10,7 @@ import styled from 'styled-components';
 // Animation
 import {motion} from 'framer-motion';
 import {pageAnimation} from '../Animation';
+import ScrollToTop from '../components/ScrollToTop';
 
 const Contact = () => {
   return (
@@ -19,6 +20,8 @@ const Contact = () => {
       initial="hidden"
       animate="show"
     >
+      <ScrollToTop />
+
       <Header>
         <h2>CONTACT</h2>
         <div className="line"></div>

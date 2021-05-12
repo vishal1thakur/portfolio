@@ -3,18 +3,19 @@ import {v4 as uuidv4} from 'uuid';
 function projects() {
   return [
     {
-      name: 'HYMN Music',
+      name: 'GameTown',
       type: 'REACT',
       cover:
-        'https://docs.google.com/uc?export=download&id=1MhQ8XJx-BlPSpaDud1PGRBZ6MsA77ond',
+        'https://docs.google.com/uc?export=download&id=1bnk3Zks-8TJ4WDthvUGOB3i0zcWQ50I3',
       id: uuidv4(),
-      link: '/work/react/hymn',
+      link: '/work/react/gametown',
       date: 'March 2021',
       description:
         'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt, mollitia accusantium. Esse enim praesentium ducimus, voluptatum expedita explicabo neque id.',
       big:
-        'https://docs.google.com/uc?export=download&id=10cQW9zk6FmJVSZxYxR2o2-Zz7Lwlw_GD',
+        'https://docs.google.com/uc?export=download&id=1inClE-jaLqs3yEb4zEuDpKqbDtF5iLgW',
     },
+
     {
       name: 'Smart RCO',
       type: 'UX / UI',
@@ -43,17 +44,17 @@ function projects() {
         'https://docs.google.com/uc?export=download&id=1DScRp5yiMYOa7WWNMneZzHCgF2nHlgCi',
     },
     {
-      name: 'GameTown',
+      name: 'HYMN Music',
       type: 'REACT',
       cover:
-        'https://docs.google.com/uc?export=download&id=1bnk3Zks-8TJ4WDthvUGOB3i0zcWQ50I3',
+        'https://docs.google.com/uc?export=download&id=1MhQ8XJx-BlPSpaDud1PGRBZ6MsA77ond',
       id: uuidv4(),
-      link: '/work/react/gametown',
+      link: '/work/react/hymn',
       date: 'March 2021',
       description:
         'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt, mollitia accusantium. Esse enim praesentium ducimus, voluptatum expedita explicabo neque id.',
       big:
-        'https://docs.google.com/uc?export=download&id=1inClE-jaLqs3yEb4zEuDpKqbDtF5iLgW',
+        'https://docs.google.com/uc?export=download&id=10cQW9zk6FmJVSZxYxR2o2-Zz7Lwlw_GD',
     },
     {
       name: 'Pictel',

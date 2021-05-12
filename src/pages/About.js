@@ -10,6 +10,7 @@ import fast from '../img/about/fast.svg';
 import intuitive from '../img/about/intuitive.svg';
 import responsive from '../img/about/responsive.svg';
 import dynamic from '../img/about/dynamic.svg';
+import ScrollToTop from '../components/ScrollToTop';
 
 const About = () => {
   const durationSeconds = 1;
@@ -21,6 +22,7 @@ const About = () => {
       initial="hidden"
       animate="show"
     >
+      <ScrollToTop />
       <Header>
         <h2>ABOUT</h2>
         <div className="line"></div>

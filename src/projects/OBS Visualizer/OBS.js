@@ -14,6 +14,8 @@ import Check1 from './components/Check1';
 import Make2 from './components/Make2';
 import Check2 from './components/Check2';
 import Make3 from './components/Make3';
+import ScrollToTop from '../ScrollToTop';
+
 // Animation
 import {motion} from 'framer-motion';
 import {pageAnimation, cardAnim} from '../Animation';
@@ -28,6 +30,8 @@ const OBS = () => {
       style={{backgroundColor: '#FDFDFD'}}
       className="SLApp"
     >
+      <ScrollToTop />
+
       <GlobalStylesOBS />
       <HeaderUX />
       <ProjectBackground />

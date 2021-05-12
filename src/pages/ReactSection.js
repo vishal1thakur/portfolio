@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 // Components
+import ScrollToTop from '../components/ScrollToTop';
 
 import SeparateProject from '../components/SeparateProject';
 // Style
@@ -15,6 +16,8 @@ const AllWork = () => {
 
   return (
     <Work exit="exit" variants={pageAnimation} initial="hidden" animate="show">
+      <ScrollToTop />
+
       <Header>
         <h2>REACT</h2>
         <div className="line"></div>

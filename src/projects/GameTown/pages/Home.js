@@ -6,6 +6,7 @@ import {loadGames} from '../actions/gamesAction';
 //Components
 import Game from '../components/Game';
 import Spinner from '../components/Spinner';
+
 //Styling and Animation
 import styled from 'styled-components';
 import {motion, AnimatePresence, AnimateSharedLayout} from 'framer-motion';

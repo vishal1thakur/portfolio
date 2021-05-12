@@ -176,8 +176,10 @@ const StyledSeparateProject = styled(motion.div)`
       height: 13%;
       transition: 1s all ease-in;
       .type-box {
-        background: transparent;
-        border: 0.5px solid rgba(255, 205, 46, 0.4);
+        background: rgba(255, 205, 46, 1);
+        border: none;
+        /* background: transparent;
+        border: 0.5px solid rgba(255, 205, 46, 0.4); */
         width: 100%;
         height: 100%;
         display: flex;
@@ -190,14 +192,14 @@ const StyledSeparateProject = styled(motion.div)`
         justify-content: bottom;
 
         h5 {
-          color: #ffcd2e;
-          /* color: #2a2e35; */
-          font-size: 0.7rem;
-          font-weight: 600;
+          color: #2a2e35;
+          font-weight: 800;
+          /* color: #ffcd2e; */
+          font-size: 0.8rem;
           letter-spacing: 0.1rem;
         }
       }
-      &:active {
+      /* &:active {
         .type-box {
           background: rgba(255, 205, 46, 1);
           border: none;
@@ -206,7 +208,7 @@ const StyledSeparateProject = styled(motion.div)`
           color: #2a2e35;
           font-weight: 600;
         }
-      }
+      } */
     }
   }
 
