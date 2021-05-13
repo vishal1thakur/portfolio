@@ -6,120 +6,120 @@ function projects() {
       name: 'GameTown',
       type: 'REACT',
       cover:
-        'https://docs.google.com/uc?export=download&id=1bnk3Zks-8TJ4WDthvUGOB3i0zcWQ50I3',
+        'https://docs.google.com/uc?export=download&id=1JoyYFvB3pKeMphqdWKL9XDkdAckvzfdL',
       id: uuidv4(),
       link: '/work/react/gametown',
       date: 'March 2021',
       description:
         'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt, mollitia accusantium. Esse enim praesentium ducimus, voluptatum expedita explicabo neque id.',
       big:
-        'https://docs.google.com/uc?export=download&id=1inClE-jaLqs3yEb4zEuDpKqbDtF5iLgW',
+        'https://docs.google.com/uc?export=download&id=1wFJ6Gr0JsGGFzt75rLWolVl1o7icDXCs',
     },
 
     {
       name: 'Smart RCO',
       type: 'UX / UI',
       cover:
-        'https://docs.google.com/uc?export=download&id=14ETa8MarlDLUFWJwvWaN9uDkEkbdgi-4',
+        'https://docs.google.com/uc?export=download&id=1N-bRkQ-vszY57MF_pCSUb72CMKE4GVfK',
       id: uuidv4(),
       link: '/work/ux/rco',
       date: 'March 2021',
       description:
         'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt, mollitia accusantium. Esse enim praesentium ducimus, voluptatum expedita explicabo neque id.',
       big:
-        'https://docs.google.com/uc?export=download&id=1G88Lvlg_g3eh6qEuHTmW6hRYJ-v8Cb19',
+        'https://docs.google.com/uc?export=download&id=1Cpwccx6gpB-iDdXjklumIyuHyAk9R7Fa',
     },
 
     {
       name: 'Rangeen',
       type: 'JAVASCRIPT',
       cover:
-        'https://docs.google.com/uc?export=download&id=1miKN1rGB9UvC3MOLLSN9dF0GEFRjLi_V',
+        'https://docs.google.com/uc?export=download&id=1YuoasNmSpPsIcdiKT2GPssskZUjTTd7v',
       id: uuidv4(),
       date: 'March 2021',
       external: 'https://vishalthakur-rangeen.netlify.app/',
       description:
         'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt, mollitia accusantium. Esse enim praesentium ducimus, voluptatum expedita explicabo neque id.',
       big:
-        'https://docs.google.com/uc?export=download&id=1DScRp5yiMYOa7WWNMneZzHCgF2nHlgCi',
+        'https://docs.google.com/uc?export=download&id=1G8f--HOTu42lA5bhINLvLcpLFqPl5r74',
     },
     {
       name: 'HYMN Music',
       type: 'REACT',
       cover:
-        'https://docs.google.com/uc?export=download&id=1MhQ8XJx-BlPSpaDud1PGRBZ6MsA77ond',
+        'https://docs.google.com/uc?export=download&id=1-RQ2ocfzSrCghbYte_aqHt5MTrL4xHip',
       id: uuidv4(),
       link: '/work/react/hymn',
       date: 'March 2021',
       description:
         'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt, mollitia accusantium. Esse enim praesentium ducimus, voluptatum expedita explicabo neque id.',
       big:
-        'https://docs.google.com/uc?export=download&id=10cQW9zk6FmJVSZxYxR2o2-Zz7Lwlw_GD',
+        'https://docs.google.com/uc?export=download&id=1mz5UpisDiyjwCUyzOI_LKi6p5GtzYR5Q',
     },
     {
       name: 'Pictel',
       type: 'JAVASCRIPT',
       cover:
-        'https://docs.google.com/uc?export=download&id=10L4Qhb6wSO0iXqLGDPQMSJWur-6zuGK0',
+        'https://docs.google.com/uc?export=download&id=1CL6Q-20PRbqTWXcraAI_JlIK0KUC1KOM',
       id: uuidv4(),
       external: 'https://vishalthakur-pictel.netlify.app/',
       date: 'March 2021',
       description:
         'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt, mollitia accusantium. Esse enim praesentium ducimus, voluptatum expedita explicabo neque id.',
       big:
-        'https://docs.google.com/uc?export=download&id=1oChjNrG-3bh43y3EObsSOUTilVisZrYm',
+        'https://docs.google.com/uc?export=download&id=1W6lzycBRmaT0z2ImM90lnmJxSx8DGRIC',
     },
     {
       name: 'CinePhile',
       type: 'REACT',
       cover:
-        'https://docs.google.com/uc?export=download&id=1KL6gOLCeWYubIud-kzl39jWiUwOE-cb6',
+        'https://docs.google.com/uc?export=download&id=12cxnDu9VhldJXTn6QbUIzWXsKI9xa-Ah',
       id: uuidv4(),
       link: '/work/react/cinephile',
       date: 'March 2021',
       description:
         'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt, mollitia accusantium. Esse enim praesentium ducimus, voluptatum expedita explicabo neque id.',
       big:
-        'https://docs.google.com/uc?export=download&id=1KL6gOLCeWYubIud-kzl39jWiUwOE-cb6',
+        'https://docs.google.com/uc?export=download&id=1qlNG3v4hThfG-Vifzh1p3WfM7DSrXbeq',
     },
     {
       name: 'Nomos',
       type: 'UX / UI',
       cover:
-        'https://docs.google.com/uc?export=download&id=1JIeF_Ubheacfyi-9denid2hoHbR6jD7a',
+        'https://docs.google.com/uc?export=download&id=1w3oEawUA2ABpntYY2YbUyBXoQQ_dgjXZ',
       id: uuidv4(),
       link: '/work/ux/nomos',
       date: 'March 2021',
       description:
         'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt, mollitia accusantium. Esse enim praesentium ducimus, voluptatum expedita explicabo neque id.',
       big:
-        'https://docs.google.com/uc?export=download&id=1WGz8RhcdqnFs9Jom4nCg0jq6lAS8qst_',
+        'https://docs.google.com/uc?export=download&id=1-VZJYq2EH39oIqJXx-mZvzla7QpZMybL',
     },
     {
       name: 'ToDo List',
       type: 'JAVASCRIPT',
       cover:
-        'https://docs.google.com/uc?export=download&id=1LMyzHaIX_9j2z4fufInxv4UzHlBY4t8r',
+        'https://docs.google.com/uc?export=download&id=1jW4lSCeGoBkv-9RbiiEgaotONLYRsv9r',
       id: uuidv4(),
       external: 'https://vishalthakur-todo.netlify.app/',
       date: 'March 2021',
       description:
         'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt, mollitia accusantium. Esse enim praesentium ducimus, voluptatum expedita explicabo neque id.',
       big:
-        'https://docs.google.com/uc?export=download&id=1LMyzHaIX_9j2z4fufInxv4UzHlBY4t8r',
+        'https://docs.google.com/uc?export=download&id=1aXQKeYn8g-0yBcjD2RHyUW99m1BUrjv0',
     },
     {
       name: 'OBS Visualizer',
       type: 'UX / UI',
       cover:
-        'https://docs.google.com/uc?export=download&id=1jjgc1NRSRcZD0QO_SE-Wdv3IFkK7dZni',
+        'https://docs.google.com/uc?export=download&id=15-nw550A7T9Vf-ifWhsXDW5WfzBWslZn',
       id: uuidv4(),
       link: '/work/ux/obs',
       date: 'March 2021',
       description:
         'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt, mollitia accusantium. Esse enim praesentium ducimus, voluptatum expedita explicabo neque id.',
       big:
-        'https://docs.google.com/uc?export=download&id=1ctYvvQtXccTmnbjB1sadLzfFE58vjzdi',
+        'https://docs.google.com/uc?export=download&id=1SMWMWL6IaxSCyAEDWZUKWzxiJoCGQsMq',
     },
   ];
 }

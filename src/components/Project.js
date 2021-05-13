@@ -14,7 +14,10 @@ const Project = ({project}) => {
           <div className="grey-bg"></div>
           <div className="content-bg">
             <div className="image">
-              <img src={project.big} alt="" />
+              <picture>
+                <source srcSet={project.cover} type="image/webp" />
+                <img src={project.cover} alt="" />
+              </picture>
             </div>
             <div className="content">
               <div className="project-name">
@@ -119,6 +122,13 @@ const StyledProject = styled(motion.div)`
       background: #454a52;
       border-radius: 5px;
 
+      picture {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 5px;
+        image-rendering: high-quality;
+      }
       img {
         width: 100%;
         height: 100%;
