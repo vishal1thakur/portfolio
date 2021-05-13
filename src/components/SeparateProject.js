@@ -14,20 +14,20 @@ const SeparateProject = ({project}) => {
           <div className="container">
             <h4>{project.name}</h4>
 
-            <p className="date">March 2021</p>
+            <p className="date">{project.date}</p>
 
-            <p className="description">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam
-              nemo illo iste aspernatur maxime quos reiciendis ut! Perferendis,
-              odit unde?
-            </p>
+            <p className="description">{project.description}</p>
           </div>
         </div>
         <div className="button">
           {project.link ? (
             <Link to={project.link}>
               <div className="type-box">
-                <h5>View Project</h5>
+                {project.type === 'UX / UI' ? (
+                  <h5>Read CaseStudy</h5>
+                ) : (
+                  <h5>View Project</h5>
+                )}
               </div>
             </Link>
           ) : (
@@ -149,7 +149,7 @@ const StyledSeparateProject = styled(motion.div)`
         h4 {
           color: #f3f3f3;
           font-weight: 500;
-          font-size: 1.4rem;
+          font-size: 1.6rem;
 
           margin-top: auto;
           letter-spacing: 0.05rem;
@@ -159,15 +159,18 @@ const StyledSeparateProject = styled(motion.div)`
           font-size: 0.9rem;
           color: #ffd759;
           font-weight: 400;
-          padding-top: 0.3rem;
+          padding-top: 0.4rem;
+          letter-spacing: 0.05rem;
         }
         .description {
-          font-size: 0.85rem;
+          font-size: 0.9rem;
           color: #b7b7b7;
           text-align: left;
-          letter-spacing: 0.1rem;
+          letter-spacing: 0.05rem;
           margin-bottom: 2rem;
           margin-top: 1.5rem;
+          line-height: 1.2rem;
+          font-weight: 300;
         }
       }
     }
@@ -195,7 +198,7 @@ const StyledSeparateProject = styled(motion.div)`
           color: #2a2e35;
           font-weight: 800;
           /* color: #ffcd2e; */
-          font-size: 0.8rem;
+          font-size: 0.75rem;
           letter-spacing: 0.1rem;
         }
       }
