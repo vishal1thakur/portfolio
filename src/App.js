@@ -14,6 +14,7 @@ import Contact from './pages/Contact';
 import AllWork from './pages/AllWork';
 // Components
 import Home from './pages/Home';
+import HHome from './pages/HHome';
 import Nav from './components/Nav';
 import ReactSection from './pages/ReactSection';
 import JSSection from './pages/JSSection';
@@ -35,6 +36,9 @@ function App() {
         <Switch location={location} key={location.pathname}>
           <Route path="/" exact>
             <Home />
+          </Route>
+          <Route path="/hhome">
+            <HHome />
           </Route>
           <Route path="/about">
             <About />

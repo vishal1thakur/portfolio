@@ -10,7 +10,7 @@ import github from '../img/github.svg';
 import linkedin from '../img/linkedin.svg';
 import resume from '../img/resume.svg';
 
-const Home = () => {
+const HHome = () => {
   return (
     <StyledHHome
       exit="exit"
@@ -476,4 +476,4 @@ const SocialCard = styled(motion.Link)`
   }
 `;
 
-export default Home;
+export default HHome;

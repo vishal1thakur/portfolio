@@ -145,6 +145,15 @@ const Menu = styled(motion.div)`
             color: #ffcd2e;
           }
         }
+        &:active {
+          background: #24282e;
+          .image {
+            filter: grayscale(0%) opacity(1);
+          }
+          .link-text {
+            color: #ffcd2e;
+          }
+        }
         .image {
           width: 1.8rem;
 
@@ -182,7 +191,7 @@ const Menu = styled(motion.div)`
       align-items: center;
       text-align: center;
       width: 100%;
-      height: 5rem;
+      height: 10vh;
       text-decoration: none;
 
       .nav-item {
@@ -190,8 +199,8 @@ const Menu = styled(motion.div)`
         flex-direction: column;
         justify-content: center;
         text-decoration: none;
-        width: 6rem;
-        height: 5rem;
+        width: auto;
+        height: 100%;
         align-items: center;
         &:active {
           background: #24282e;
