@@ -9,6 +9,14 @@ import {Link} from 'react-router-dom';
 const SeparateProject = ({project}) => {
   return (
     <StyledSeparateProject>
+      <div className="meta-image">
+        <div className="grey-bg"></div>
+        <div className="content-bg">
+          <div className="image-bg" style={{background: project.bg}}>
+            {/* <img src={project.big} alt="" /> */}
+          </div>
+        </div>
+      </div>
       <div className="content">
         <div className="right-side">
           <div className="container">
@@ -39,14 +47,6 @@ const SeparateProject = ({project}) => {
           )}
         </div>
       </div>
-      <div className="meta-image">
-        <div className="grey-bg"></div>
-        <div className="content-bg">
-          <div className="image-bg">
-            <img src={project.big} alt="" />
-          </div>
-        </div>
-      </div>
     </StyledSeparateProject>
   );
 };
@@ -61,7 +61,7 @@ const StyledSeparateProject = styled(motion.div)`
   width: 100%;
 
   .meta-image {
-    width: 55%;
+    width: 50%;
     height: 100%;
     position: relative;
     .grey-bg,
@@ -101,7 +101,7 @@ const StyledSeparateProject = styled(motion.div)`
       .image-bg {
         width: 100%;
         height: 100%;
-        background: #12181b;
+        /* background: #12181b; */
         display: flex;
         justify-content: center;
         align-items: center;
@@ -123,7 +123,7 @@ const StyledSeparateProject = styled(motion.div)`
   .content {
     width: 45%;
     height: 100%;
-    padding-right: 5rem;
+    padding-left: 3rem;
 
     .right-side {
       display: flex;
@@ -132,7 +132,6 @@ const StyledSeparateProject = styled(motion.div)`
       top: auto;
 
       height: 87%;
-      padding-right: 5rem;
 
       .container {
         width: 100%;
@@ -145,7 +144,7 @@ const StyledSeparateProject = styled(motion.div)`
         justify-content: bottom;
         align-items: bottom;
         text-align: left;
-        flex-grow: 1;
+
         h4 {
           color: #f3f3f3;
           font-weight: 500;
@@ -214,30 +213,37 @@ const StyledSeparateProject = styled(motion.div)`
       } */
     }
   }
-
   @media only screen and (max-width: 600px) {
+    display: flex;
     flex-direction: column;
+    justify-content: space-between;
 
-    .content-bg {
-      .project {
-        h4 {
-          font-size: 0.9rem;
-        }
-        p {
-          padding: 1.5rem 1rem;
-        }
-        .date {
-          font-size: 0.6rem;
-        }
-        .description {
-          font-size: 0.75rem;
-        }
-        .type-box {
-          width: 84%;
+    .meta-image {
+      width: 80%;
+      height: 100%;
+      /* margin-top: 3rem; */
+    }
+    .content {
+      width: 80%;
+      padding-right: 0rem;
+      margin: 0;
+      padding: 0;
+
+      .right-side {
+        padding-right: 0rem;
+        margin-top: 3rem;
+        height: 60%;
+        .container {
+          h4 {
+            margin-top: 0;
+          }
+          justify-content: center;
         }
       }
+      .button {
+        height: 17%;
+      }
     }
-    overflow: hidden;
   }
 `;
 

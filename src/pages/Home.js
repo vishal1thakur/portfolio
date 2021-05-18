@@ -152,7 +152,7 @@ const Name = styled(motion.div)`
   color: #ffffff;
   font-weight: bold;
   position: relative;
-  @media only screen and (max-width: 1250px) {
+  @media only screen and (max-width: 1350px) {
     font-size: 3rem;
   }
   @media only screen and (max-width: 670px) {
@@ -179,7 +179,7 @@ const Skill = styled(motion.div)`
     letter-spacing: 1rem;
 
     color: #ffcd2e;
-    @media only screen and (max-width: 1250px) {
+    @media only screen and (max-width: 1350px) {
       font-size: 0.65rem;
     }
     @media only screen and (max-width: 670px) {
@@ -207,7 +207,7 @@ const Para = styled(motion.div)`
   padding-top: 3rem;
   opacity: 0.8;
   width: 32rem;
-  @media only screen and (max-width: 1250px) {
+  @media only screen and (max-width: 1350px) {
     font-size: 0.9rem;
     width: 28rem;
   }
@@ -224,7 +224,7 @@ const Para = styled(motion.div)`
 const Button = styled(motion.div)`
   padding-top: 2rem;
   width: 32rem;
-  @media only screen and (max-width: 1250px) {
+  @media only screen and (max-width: 1350px) {
     width: 28rem;
   }
   @media only screen and (max-width: 670px) {

@@ -101,9 +101,13 @@ const Projects = styled(motion.div)`
   grid-template-rows: repeat(3, 1fr);
 
   @media only screen and (max-width: 600px) {
-    width: 95%;
+    width: 100%;
     margin-left: 0px;
     margin-bottom: 7rem;
+    row-gap: 1rem;
+    column-gap: 1rem;
+    height: 275vh;
+    row-gap: 7rem;
   }
 `;
 

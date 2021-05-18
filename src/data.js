@@ -14,6 +14,7 @@ function projects() {
         'This gaming blog lists trending, popular and upcoming video games while further showing the details of the game on click. It fetches the gaming data from the api provided by rawg.io and uses Redux to manage state.',
       big:
         'https://docs.google.com/uc?export=download&id=1wFJ6Gr0JsGGFzt75rLWolVl1o7icDXCs',
+      bg: '#DDC9E8',
     },
 
     {
@@ -27,6 +28,7 @@ function projects() {
       description: 'How should the tedious task of ad bidding be automated?',
       big:
         'https://docs.google.com/uc?export=download&id=1Cpwccx6gpB-iDdXjklumIyuHyAk9R7Fa',
+      bg: '#F2F7FE',
     },
 
     {
@@ -40,6 +42,7 @@ function projects() {
       description: 'A website to generate, customize and save color palettes',
       big:
         'https://docs.google.com/uc?export=download&id=1G8f--HOTu42lA5bhINLvLcpLFqPl5r74',
+      bg: '#F3F9FF',
     },
     {
       name: 'HYMN Music',
@@ -53,6 +56,7 @@ function projects() {
         'A minimal music player which loops through a native content library, using React Hooks for state management.',
       big:
         'https://docs.google.com/uc?export=download&id=1mz5UpisDiyjwCUyzOI_LKi6p5GtzYR5Q',
+      bg: '#FFE3CD',
     },
     {
       name: 'Pictel',
@@ -66,6 +70,7 @@ function projects() {
         'Find royalty free stock images and videos. Data fetched through the api provided by pexels.com',
       big:
         'https://docs.google.com/uc?export=download&id=1W6lzycBRmaT0z2ImM90lnmJxSx8DGRIC',
+      bg: '#EAFDFF',
     },
     {
       name: 'CinePhile',
@@ -79,6 +84,7 @@ function projects() {
         'A website to discover trending shows and tv series. This project fetches the movie data from the api provided by themoviedb.org and uses React Hooks to manage state.',
       big:
         'https://docs.google.com/uc?export=download&id=1qlNG3v4hThfG-Vifzh1p3WfM7DSrXbeq',
+      bg: '#EEDDA5',
     },
     {
       name: 'Nomos',
@@ -91,6 +97,7 @@ function projects() {
       description: 'How can 1 person manage 2000 autonomous delivery vehicles?',
       big:
         'https://docs.google.com/uc?export=download&id=1-VZJYq2EH39oIqJXx-mZvzla7QpZMybL',
+      bg: '#E1ECF5',
     },
     {
       name: 'ToDo List',
@@ -103,6 +110,7 @@ function projects() {
       description: 'A minimal ToDo List with custom css animations.',
       big:
         'https://docs.google.com/uc?export=download&id=1aXQKeYn8g-0yBcjD2RHyUW99m1BUrjv0',
+      bg: '#4E8BAB',
     },
     {
       name: 'OBS Visualizer',
@@ -116,6 +124,7 @@ function projects() {
         'How should tagged sports video’s be visualized for fast quality checking?',
       big:
         'https://docs.google.com/uc?export=download&id=1SMWMWL6IaxSCyAEDWZUKWzxiJoCGQsMq',
+      bg: '#FEF6FF',
     },
   ];
 }
