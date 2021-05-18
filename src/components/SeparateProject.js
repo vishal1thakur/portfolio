@@ -13,7 +13,7 @@ const SeparateProject = ({project}) => {
         <div className="grey-bg"></div>
         <div className="content-bg">
           <div className="image-bg" style={{background: project.bg}}>
-            {/* <img src={project.big} alt="" /> */}
+            <img src={project.big} alt="" />
           </div>
         </div>
       </div>
@@ -110,8 +110,8 @@ const StyledSeparateProject = styled(motion.div)`
 
         position: relative;
         img {
-          width: 100%;
-          height: 100%;
+          width: 80%;
+          height: auto;
           object-fit: cover;
           border-radius: 10px;
 

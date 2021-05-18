@@ -13,11 +13,8 @@ const Project = ({project}) => {
         <Link to={project.link}>
           <div className="grey-bg"></div>
           <div className="content-bg">
-            <div className="image">
-              <picture>
-                <source srcSet={project.cover} type="image/webp" />
-                <img src={project.cover} alt="" />
-              </picture>
+            <div className="image" style={{background: project.bg}}>
+              <img src={project.cover} alt="" />
             </div>
             <div className="content">
               <div className="project-name">
@@ -46,7 +43,7 @@ const Project = ({project}) => {
         <a href={project.external} target="_blank">
           <div className="grey-bg"></div>
           <div className="content-bg">
-            <div className="image">
+            <div className="image" style={{background: project.bg}}>
               <img src={project.cover} alt="" />
             </div>
             <div className="content">
@@ -121,20 +118,15 @@ const StyledProject = styled(motion.div)`
       height: 80%;
       background: #454a52;
       border-radius: 5px;
+      display: flex;
 
-      picture {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        border-radius: 5px;
-        image-rendering: high-quality;
-      }
+      justify-content: center;
+      align-items: center;
+
       img {
-        width: 100%;
-        height: 100%;
+        width: auto;
+        height: 80%;
         object-fit: cover;
-        border-radius: 5px;
-        image-rendering: high-quality;
       }
     }
     .content {

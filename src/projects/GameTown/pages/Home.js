@@ -166,6 +166,13 @@ const GameList = styled(motion.div)`
       }
     }
   }
+  @media only screen and (max-width: 320px) {
+    .heads {
+      h2 {
+        padding-top: 3rem;
+      }
+    }
+  }
 `;
 
 const Games = styled(motion.div)`

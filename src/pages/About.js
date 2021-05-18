@@ -296,31 +296,60 @@ const About = () => {
             <div className="line-me"></div>
             <div className="me">
               <p>
-                em ipsum dolor sit amet consectetur adipisicing elit. Modi
-                repellendus amet commodi, odio maxime quidem magni ducimus non,
-                quaerat cumque, autem eum? Asperiores tempora sit consectetur
-                molestias, in libero eligendi?Lor em ipsum dolor sit amet
-                consectetur adipisicing elit. Modi repellendus amet commodi,
-                odio maxime quidem magni ducimus non, quaerat cumque, autem eum?
-                Asperiores tempora sit consectetur molestias, in libero
-                eligendi?Lor
+                I'm currently designing & developing an end-to-end digital
+                interior design solution for Asthana & Associates. I have 5+
+                years of experience in designing and delivering digital and
+                physical products & 3 years in front-end development. <br />
+                Studying Architecture gave me a solid foundation for designing
+                meaningful experiences for people. I began my design journey by
+                designing bungalows, highrises, and institution buildings at
+                Spasm Design. <br />
+                During my time at Spasm Design, I was also in charge of
+                designing and getting the company website executed, which
+                sparked my love for digital products. <br /> I switched to
+                Product Design soon after and I have found it has directly
+                transferable skills from Architecture, as the user is at the
+                center of the design. It was not too late when I started
+                developing the interfaces. <br /> I began with the core
+                understanding of UI development with HTML5, CSS3, and vanilla
+                JavaScript and late tied it up with React. <br /> I love all
+                things tech and am fascinated with technology's role in the
+                advancement of humanity and speculating what future impacts it
+                will have on society.
               </p>
             </div>
           </div>
           <div className="links">
             <div className="button">
-              <button>RESUME</button>
+              <a
+                href="https://github.com/vishal1thakur"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <button>GITHUB</button>
+              </a>
+            </div>
+            <div className="button">
+              <a
+                href="https://www.linkedin.com/in/vishal1thakur/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <button>LINKEDIN</button>
+              </a>
+            </div>
+            <div className="button">
+              <a
+                href="https://drive.google.com/file/d/1V8qa5IdW6EZFLeRB0Fq-CNgBEUsEfsiU/view?usp=sharing"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <button>RESUME</button>
+              </a>
             </div>
           </div>
         </AboutMe>
       </StyledAbout>
-      <Footer className="footer">
-        <hr></hr>
-        <p className="copyright">
-          &#169; 2021 Vishal Thakur : website crafted in React, deployed on
-          Netlify
-        </p>
-      </Footer>
     </AllAbout>
   );
 };
@@ -375,7 +404,7 @@ const Header = styled(motion.div)`
 
 const StyledAbout = styled(motion.div)`
   margin-left: 100px;
-  height: 120vh;
+  height: 135vh;
   width: 65%;
   /* background: white; */
 
@@ -387,7 +416,7 @@ const StyledAbout = styled(motion.div)`
 
   background-image: url(${background});
   background-repeat: no-repeat;
-  background-position: 50% 25%;
+  background-position: 50% 18%;
   background-size: cover;
   background-size: 50%;
 
@@ -578,7 +607,8 @@ const AboutMe = styled(motion.div)`
   justify-content: top;
   text-align: top;
   align-items: top;
-  margin-top: 20px;
+  margin-top: 1rem;
+  margin-bottom: 3rem;
 
   .text {
     width: 70%;
@@ -610,8 +640,10 @@ const AboutMe = styled(motion.div)`
       margin-top: 20px;
       font-size: 14px;
       color: white;
-      align-items: justify;
+      /* align-items: justify; */
       line-height: 1.5rem;
+      justify-content: left;
+      text-align: left;
     }
   }
   .links {
@@ -639,6 +671,9 @@ const AboutMe = styled(motion.div)`
         letter-spacing: 0.1em;
         font-size: 12px;
         opacity: 0.5;
+        &:hover {
+          cursor: pointer;
+        }
       }
     }
   }
@@ -654,29 +689,5 @@ const AboutMe = styled(motion.div)`
       width: 100%;
     }
     padding-bottom: 3rem;
-  }
-`;
-
-const Footer = styled(motion.div)`
-  margin-left: 100px;
-  margin-bottom: 2rem;
-  hr {
-    border-top: 1px dashed #4a4a4a;
-    border-left: 0px;
-    border-bottom: 0px;
-    border-right: 0px;
-    opacity: 0.4;
-  }
-
-  .copyright {
-    padding-top: 0.5rem;
-    text-align: center;
-    font-size: 12px;
-    opacity: 0.6;
-    color: #636566;
-  }
-
-  @media only screen and (max-width: 600px) {
-    display: none;
   }
 `;

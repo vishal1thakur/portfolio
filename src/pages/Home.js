@@ -53,7 +53,7 @@ const Home = () => {
           {/* Github link */}
           <SocialCard>
             <a
-              href="https://www.linkedin.com/in/vishal1thakur/"
+              href="https://github.com/vishal1thakur"
               target="_blank"
               rel="noreferrer"
             >
@@ -79,7 +79,7 @@ const Home = () => {
           {/* Resume link */}
           <SocialCard>
             <a
-              href="https://github.com/vishal1thakur"
+              href="https://drive.google.com/file/d/1V8qa5IdW6EZFLeRB0Fq-CNgBEUsEfsiU/view?usp=sharing"
               target="_blank"
               rel="noreferrer"
             >
