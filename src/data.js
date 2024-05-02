@@ -6,7 +6,7 @@ function projects() {
       name: 'GameTown',
       type: 'REACT',
       cover:
-        'https://docs.google.com/uc?export=download&id=1IfSHDrA7voSK2GRyGUDChfg_owmrEWxe',
+        'https://drive.google.com/open?id=1GOlphUrgyH-x-llqWVj0LNx9Fk9ZjJXl',
       id: uuidv4(),
       link: '/work/react/gametown',
       date: 'April 2021',
